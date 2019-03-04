@@ -6,7 +6,10 @@ function xdot = EqMotion(t,x)
 	V 	=	x(1);
 	Gam	=	x(2);
 	q	=	0.5 * rho * V^2;	% Dynamic Pressure, N/m^2
-	
+    
+    
+	%a = (drag force + force of gravity)/m
+    %Vx or Vy = Vsin(gam)
 	xdot	=	[(-CD * q * S - m * g * sin(Gam)) / m
 				 (CL * q * S - m * g * cos(Gam)) / (m * V)
 				 V * sin(Gam)

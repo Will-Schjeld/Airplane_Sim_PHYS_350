@@ -9,10 +9,10 @@
 	m		=	0.003;			% Mass, kg
 	g		=	9.8;			% Gravitational acceleration, m/s^2
 	rho		=	1.225;			% Air density at Sea Level, kg/m^3	
-	CLa		=	3.141592 * AR/(1 + sqrt(1 + (AR / 2)^2));
+	CLa		=	pi * AR/(1 + sqrt(1 + (AR / 2)^2));
 							% Lift-Coefficient Slope, per rad
 	CDo		=	0.02;			% Zero-Lift Drag Coefficient
-	epsilon	=	1 / (3.141592 * e * AR);% Induced Drag Factor	
+	epsilon	=	1 / (pi * e * AR);% Induced Drag Factor	
 	CL		=	sqrt(CDo / epsilon);	% CL for Maximum Lift/Drag Ratio
 	CD		=	CDo + epsilon * CL^2;	% Corresponding CD
 	LDmax	=	CL / CD;			% Maximum Lift/Drag Ratio
@@ -33,29 +33,21 @@
 %	b) Oscillating Glide due to Zero Initial Flight Path Angle
 	xo		=	[V;0;H;R];
 	[tb,xb]	=	ode23('EqMotion',tspan,xo);
-
-%	c) Effect of Increased Initial Velocity
-	xo		=	[1.5*V;0;H;R];
-	[tc,xc]	=	ode23('EqMotion',tspan,xo);
-
-%	d) Effect of Further Increase in Initial Velocity
-	xo		=	[3*V;0;H;R];
-	[td,xd]	=	ode23('EqMotion',tspan,xo);
 	
 	figure
-	plot(xa(:,4),xa(:,3),xb(:,4),xb(:,3),xc(:,4),xc(:,3),xd(:,4),xd(:,3))
+	plot(xa(:,4),xa(:,3),xb(:,4),xb(:,3))
 	xlabel('Range, m'), ylabel('Height, m'), grid
 
 	figure
 	subplot(2,2,1)
-	plot(ta,xa(:,1),tb,xb(:,1),tc,xc(:,1),td,xd(:,1))
+	plot(ta,xa(:,1),tb,xb(:,1))
 	xlabel('Time, s'), ylabel('Velocity, m/s'), grid
 	subplot(2,2,2)
-	plot(ta,xa(:,2),tb,xb(:,2),tc,xc(:,2),td,xd(:,2))
+	plot(ta,xa(:,2),tb,xb(:,2))
 	xlabel('Time, s'), ylabel('Flight Path Angle, rad'), grid
 	subplot(2,2,3)
-	plot(ta,xa(:,3),tb,xb(:,3),tc,xc(:,3),td,xd(:,3))
+	plot(ta,xa(:,3),tb,xb(:,3))
 	xlabel('Time, s'), ylabel('Altitude, m'), grid
 	subplot(2,2,4)
-	plot(ta,xa(:,4),tb,xb(:,4),tc,xc(:,4),td,xd(:,4))
+	plot(ta,xa(:,4),tb,xb(:,4))
 	xlabel('Time, s'), ylabel('Range, m'), grid
