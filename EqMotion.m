@@ -1,7 +1,7 @@
 function xdot = EqMotion(t,x)
 %	Fourth-Order Equations of Aircraft Motion
 
-	global CL CD S m g rho
+	global CL CD A m g rho
 	
 	V 	=	x(1);
 	Gamma	=	x(2);
@@ -10,8 +10,7 @@ function xdot = EqMotion(t,x)
     
 	%a = (drag force + force of gravity)/m
     %Vx or Vy = Vsin(gam)
-	xdot	=	[(-CD * q * S - m * g * sin(Gamma)) / m
-				 (CL * q * S - m * g * cos(Gamma)) / (m * V)
+	xdot	=	[(-CD * q * A - m * g * sin(Gamma)) / m
+				 (CL * q * A - m * g * cos(Gamma)) / (m * V)
 				 V * sin(Gamma)
 				 V * cos(Gamma)];
-             

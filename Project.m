@@ -21,17 +21,18 @@
 							% Corresponding Velocity, m/s
 	Alpha	=	CL / CLa;			% Corresponding Angle of Attack, rad
 	
-%	a) Equilibrium Glide at Maximum Lift/Drag Ratio
-	Y		=	2;			% Initial Height, m
-	X		=	0;			% Initial Range, m
+%   a) Equilibrium Glide at Maximum Lift/Drag Ratio
+	H		=	2;			% Initial Height, m
+	R		=	0;			% Initial Range, m
 	to		=	0;			% Initial Time, sec
 	tf		=	6;			% Final Time, sec
 	tspan	=	[to tf];
-	xo		=	[V;Gamma;Y;X];
+	xo		=	[V;Gamma;H;R];
 	[ta,xa]	=	ode23('EqMotion',tspan,xo);
 	
 %	b) Oscillating Glide due to Zero Initial Flight Path Angle
-	xo		=	[V;0;Y;X];
+	xo		=	[V;0;H;R];
+    xb      = zeros(1,4);
 	[tb,xb]	=	ode23('EqMotion',tspan,xo);
 	
 	figure
