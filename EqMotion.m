@@ -20,10 +20,10 @@ function eqns = EqMotion(t,x)
     gy = g*sin(phi)*cos(theta);
     gz = g*cos(phi)*cos(theta);
     
-    Cx = 1;
-    Cy = 1;
-    Cz = 1;
-    Cn = 2*sin(alpha)^2; %eqn 2.4-3
+    Cx = .001;
+    Cy = .001;
+    Cz = .001;
+    Cn = 2*(sin(alpha))^2; %eqn 2.4-3
     Cl = Cn*cos(alpha);  %eqn 2.4-4a look at 4b for a better approximation
     Cm = 1; %eqn 2.4-43
     
@@ -40,7 +40,7 @@ function eqns = EqMotion(t,x)
     wdot   = Z/m + gz + q*u - p*v;
     
     %Roll, Pitch, Yaw Accelerations (Angular Accelerations)
-    pdot   = (Ixx*L + Ixz*N - (Ixz*(Iyy - Ixx - Izz) * p + (Ixz^2 + Izz*(Izz - Iyy))*r)*q) / (Ixx*Izz - Ixz^2);
+    pdot   = (Izz*L + Ixz*N - (Ixz*(Iyy - Ixx - Izz) * p + (Ixz^2 + Izz*(Izz - Iyy))*r)*q) / (Ixx*Izz - Ixz^2);
     qdot   = (M - (Ixx - Izz)*p*r - Ixz*(p^2-r^2)) / Iyy;
     rdot   = (Ixz*L + Ixx*N + (Ixz*(Iyy - Ixx - Izz) * r + (Ixz^2 + Ixx*(Ixx - Iyy))*p)*q) / (Ixx*Izz - Ixz^2);
     
@@ -50,7 +50,7 @@ function eqns = EqMotion(t,x)
     zdot   = (-sin(theta)*u + (sin(phi)*cos(theta))*v + (cos(phi)*cos(theta)*w));
     
     %Euler Angles Rate of Change
-    phidot = p + (q*sin(phi) - r*cos(phi))*tan(theta);
+    phidot = p + (q*sin(phi) + r*cos(phi))*tan(theta);
     thetadot = q*cos(phi) - r*sin(phi);
     psidot = (q*sin(phi) + r*cos(phi))*sec(theta);
     

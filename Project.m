@@ -14,7 +14,7 @@
 	A		=	0.017;			% Reference Area, m^2
 	AR		=	0.86;			% Wing Aspect Ratio. Wingspan / Chord
 	e		=	0.9;			% Oswald Efficiency Factor;
-	m		=	0.003;			% Mass, kg
+	m		=	0.005;			% Mass, kg
 	g		=	9.81;			% Gravitational acceleration, m/s^2
 	rho		=	1.225;			% Air density at Sea Level, kg/m^3	
 	CLa		=	pi * AR/(1 + sqrt(1 + (AR / 2)^2));
@@ -34,7 +34,7 @@
 	x		=	0;			% Initial x, m
     y       =   0;          % Initial y, m
 	to		=	0;			% Initial Time, sec
-	tf		=	1;			% Final Time, sec
+	tf		=	5;			% Final Time, sec
 	tspan	=	[to tf];
 	xo		=	[1 0 0 0 0 0 x y z 0 0 0]';         % Given as [u v w p q r x y z phi theta psi]
 	[ta,xa]	=	ode23('EqMotion',tspan,xo);
