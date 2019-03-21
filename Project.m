@@ -4,11 +4,11 @@
     clear;
     
 	global Ixx Iyy Izz Ixz A m g rho c b
-    Ixx     =   .5;              %TODO: CALCULATE
-    Iyy     =   .5;
-    Izz     =   .2;
-    Ixz     =   .1;
-    c       =   .2;             % chord length, m, complete guess ****************
+    Ixx     =   .005;              %TODO: CALCULATE
+    Iyy     =   .005;
+    Izz     =   .001;
+    Ixz     =   .002;
+    c       =   .1;             % chord length, m, complete guess ****************
     b       =   .1;              % ?????
     
 	A		=	0.017;			% Reference Area, m^2
@@ -30,21 +30,41 @@
 	Alpha	=	CL / CLa;			% Corresponding Angle of Attack, rad
 	
 %   a) Equilibrium Glide at Maximum Lift/Drag Ratio
-	z		=	2;			% Initial Height, m
+	z		=	5;			% Initial Height, m
 	x		=	0;			% Initial x, m
     y       =   0;          % Initial y, m
 	to		=	0;			% Initial Time, sec
-	tf		=	5;			% Final Time, sec
+	tf		=	1;			% Final Time, sec
 	tspan	=	[to tf];
-	xo		=	[1 0 0 0 0 0 x y z 0 0 0]';         % Given as [u v w p q r x y z phi theta psi]
+	xo		=	[2 0 0 0 0 0 x y z pi/3 pi/4 0]';         % Given as [u v w p q r x y z phi theta psi]
 	[ta,xa]	=	ode23('EqMotion',tspan,xo);
 	
 %	b) Oscillating Glide due to Zero Initial Flight Path Angle
 %	xo		=	[V;0;z;x];
 %   xb      = zeros(1,4);
 %   [tb,xb]	=	ode23('EqMotion',tspan,xo);
-	
-    plot3(xa(:,7),xa(:,8),xa(:,9))
+
+    draw = false;
+	xmin = min(xa(:,7));
+    xmax = max(xa(:,7));
+    ymin = min(xa(:,8));
+    ymax = max(xa(:,8));
+    zmin = min(xa(:,9));
+    zmax = max(xa(:,9));
+    delta_t = ta(2) - ta(1);
+    
+    %animates the plot in real time
+if(draw)
+    for t = 1:5:length(ta)
+        plot3(xa(1:t,7),xa(1:t,8),xa(1:t,9)); %plots up to the specified time
+        axis([xmin xmax ymin ymax zmin zmax]);
+        drawnow;
+        pause(delta_t*5);
+    end
+else
+    plot3(xa(:,7),xa(:,8),xa(:,9));
+end
+
 %    plot(xa(:,4),xa(:,3),xb(:,4),xb(:,3))
 	xlabel('Range X, m'), ylabel('Range Y, m'), zlabel('Height, m'), grid 
 % 	figure
