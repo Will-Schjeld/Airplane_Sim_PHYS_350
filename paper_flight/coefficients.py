@@ -36,7 +36,7 @@ v = 15.52       #mm^2/s -- Kinematic Viscosity of air @ 25 deg C
 #@param beta    double          sideslip angle
 #@param V       double          Earth relative speed
 #
-#@return [CD, CL, CY, Cl, Cm, Cn]   aerodynamic constants
+#@return [CD, CL, CX, CY, CZ, Cl, Cm, Cn]   aerodynamic constants
 def getCoefficients(x, alpha, beta, V):
     #Lift Coefficient (CL)
     CLo = 0
@@ -56,6 +56,12 @@ def getCoefficients(x, alpha, beta, V):
     Cmqhat = -np.pi/(3*AR)
     Cmq = Cmqhat*Cb/(2*V)
     Cm = Cmo + Cma*alpha + Cmq*x[7]
+
+    #X-direction Body Force Coefficient (CX)
+    CX = -CD*np.cos(alpha) + CL*np.sin(alpha)
+
+    #Z-direction Body Force Coefficient (CZ)
+    CZ = -CD*np.sin(alpha) - CL*np.cos(alpha)
 
     #Side Force Coefficient (CY)
     CYo = 0
@@ -96,7 +102,7 @@ def getCoefficients(x, alpha, beta, V):
     Cnr = Cnrhat*WS/(2*V)
     Cn = Cno + Cnb*beta + Cnp*x[6] + Cnr*x[8]
 
-    return [CD, CL, CY, Cl, Cm, Cn]
+    return [CD, CL, CX, CY, CZ, Cl, Cm, Cn]
 
     
 
