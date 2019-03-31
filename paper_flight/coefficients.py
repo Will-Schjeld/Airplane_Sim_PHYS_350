@@ -43,7 +43,7 @@ def getCoefficients(x, alpha, beta, V):
     CLa = np.pi*AR/(1+np.sqrt(1+(AR/2)**2))
     CLqhat = -2*np.pi/3*CLa
     CLq = CLqhat*Cb/(2*V)
-    CL = CLo + CLa*alpha + CLq*x[4]
+    CL = CLo + CLa*alpha + CLq*x[7]
 
     #Drag Coefficient (CD)
     CDo = 0.02
