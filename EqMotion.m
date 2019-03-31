@@ -1,43 +1,43 @@
 function eqns = EqMotion(t,x)
 
-	global Ixx Iyy Izz Ixz A m g rho c b
+	global Ixx Iyy Izz Ixz WA m g rho Cb WS
     
     u = x(1);
     v = x(2);
     w = x(3);
-    p = x(4);
-    q = x(5);
-    r = x(6);
+    p = x(7);
+    q = x(8);
+    r = x(9);
     phi = x(10);
     theta = x(11);
     psi = x(12);
     
     Va = sqrt(u^2 + v^2 + w^2);
-    %beta = asin(v / Va);
+    beta = asin(v / Va);
     alpha = atan(w / u);
     qbar  =	0.5 * rho * Va^2;	% Dynamic Pressure, N/m^2
     gx = -g*sin(theta);
     gy = g*sin(phi)*cos(theta);
     gz = g*cos(phi)*cos(theta);
     
-    Cx = .001;
-    Cy = .001;
-    Cz = .001;
-    Cn = 2*(sin(alpha))^2; %eqn 2.4-3
-    Cl = Cn*cos(alpha);  %eqn 2.4-4a look at 4b for a better approximation
-    Cm = 1; %eqn 2.4-43
+    coefs = GetCoefficients(x,alpha,beta,Va);
+    Drag = coefs(1)*qbar*WA;
+    SF = coefs(2)*qbar*WA;
+    Lift = coefs(3)*qbar*WA;
+    HI1 = [cos(psi) sin(psi) 0; -sin(psi) cos(psi) 0 ; 0 0 1];
+    H12 = [cos(theta) 0 -sin(theta) ; 0 1 0 ; sin(theta) 0 cos(theta)];
+    H2B = [1 0 0 ; 0 cos(phi) sin(phi); 0 -sin(phi) cos(phi)];
+    HIB = H2B * H12 * HI1;
     
-    X = Cx * qbar * A;
-    Y = Cy * qbar * A;
-    Z = Cz * qbar * A;
-    L = Cl * qbar * A * b;
-    M = Cm * qbar * A * c;
-    N = Cn * qbar * A * b;
+    faero = HIB * [-Drag SF -Lift]'; %[X Y Z]
+    L = coefs(4) * qbar * WA * WS;
+    M = coefs(5) * qbar * WA * Cb;
+    N = coefs(6) * qbar * WA * WS;
     
-    %Cartesian Accelerations
-    udot   = X/m + gx + r*v - q*w;
-	vdot   = Y/m + gy - r*u + p*w;
-    wdot   = Z/m + gz + q*u - p*v;
+    %Cartesian Accelerations in direction of euler angles
+    udot   = faero(1)/m + gx + r*v - q*w;
+	vdot   = faero(2)/m + gy - r*u + p*w;
+    wdot   = faero(3)/m + gz + q*u - p*v;
     
     %Roll, Pitch, Yaw Accelerations (Angular Accelerations)
     pdot   = (Izz*L + Ixz*N - (Ixz*(Iyy - Ixx - Izz) * p + (Ixz^2 + Izz*(Izz - Iyy))*r)*q) / (Ixx*Izz - Ixz^2);
@@ -54,4 +54,4 @@ function eqns = EqMotion(t,x)
     thetadot = q*cos(phi) - r*sin(phi);
     psidot = (q*sin(phi) + r*cos(phi))*sec(theta);
     
-	eqns	=	[udot vdot wdot pdot qdot rdot xdot ydot zdot phidot thetadot psidot]';
+	eqns	=	[udot vdot wdot xdot ydot zdot pdot qdot rdot phidot thetadot psidot]';
