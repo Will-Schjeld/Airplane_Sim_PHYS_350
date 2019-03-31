@@ -1,5 +1,6 @@
 import numpy as np 
 from coefficients import getCoefficients
+from scipy import integrate
 import transformations
 #solve paper airplane equations of motion
 #based on code by Robert F. Stengel
@@ -35,22 +36,22 @@ Izz = 27664e-9  #kg*m^2 -- Z Area Moment of Inertia
 Ixz = 27664e-9  #kg*m^2 -- XZ Area Moment of Inertia
 
 #return the state equations
-def xdot(x):
+def xdot(t,x):
     #body relative windfield
-    wind = HIB(x[9],x[10],x[11])*np.matrix([[wx],[wy],[wx]])
+    #wind = transformations.HIB(x[9],x[10],x[11])*np.matrix([[wx],[wy],[wx]])
 
     #air relative velocity field
-    Vair = np.matrix([[x[0]],[x[1]],[x[2]]])+wind
+    Vair = np.matrix([[x[:,0]],[x[:,1]],[x[:,2]]])#+wind
 
     #body relative gravity field
-    g = HIB(x[9],x[10],x[11])*np.matrix([0],[0],[g])
+    gb = transformations.HIB(x[:,9],x[:,10],x[:,11])*np.matrix([[0],[0],[g]])
 
     #constants
     V = np.linalg.norm(Vair,2)
     alpha = np.arctan(Vair[2]/Vair[0])
     beta = np.arcsin(Vair[1]/V)
     qbar = 0.5*dens*V**2
-    y = np.transpose(HIB(x[9],x[10],x[11]))*np.matrix([[x[0]],[x[1]],[x[2]]])
+    y = np.transpose(transformations.HIB(x[:,9],x[:,10],x[:,11]))*np.matrix([[x[:,0]],[x[:,1]],[x[:,2]]])
 
     #coefficients
     coef = getCoefficients(x,alpha,beta,V)
@@ -72,17 +73,36 @@ def xdot(x):
     N = Cn*qbar*S*b
 
     #dynamic equations of motions
-    du = X/m + g[0] + x[8]*x[1] - x[7]*x[2]
-    dv = Y/m + g[1] - x[8]*x[0] + x[6]*x[2]
-    dw = Z/m + g[2] + x[7]*x[0] - x[6]*x[1]
+    du = X/m + gb[0] + x[:,8]*x[:,1] - x[:,7]*x[:,2]
+    dv = Y/m + gb[1] - x[:,8]*x[:,0] + x[:,6]*x[:,2]
+    dw = Z/m + gb[2] + x[:,7]*x[:,0] - x[:,6]*x[:,1]
     dx = y[0]
     dy = y[1]
     dz = y[2]
-    dp = (Izz*L + Ixz*N - (Ixz*(Iyy - Ixx - Izz)*x[6] + (Ixz**2 + Izz*(Izz - Iyy))*x[8])*x[7])
-    dq = (M - (Ixx - Izz)*x[6]*x[8] - Ixz*(x[6]**2 - x[8]**2))/Iyy
-    dr = (Ixz*L + Ixx*N + (Ixz*(Iyy - Ixx - Izz)*x[8] + (Ixz**2 + Ixx*(Ixx - Iyy))*x[6])*x[7])
-    dphi = x[6] + (x[7]*np.sin(x[9]) + x[8](np.cos(x[9])))*np.tan(x[10])
-    dtheta = x[7]*np.cos(x[10]) - x[8]*np.sin(x[10])
-    dpsi = (x[7]*np.sin(x[10]) + x[8]*np.cos(x[10]))/np.cos(x[10])
+    dp = (Izz*L + Ixz*N - (Ixz*(Iyy - Ixx - Izz)*x[:,6] + (Ixz**2 + Izz*(Izz - Iyy))*x[:,8])*x[:,7])
+    dq = (M - (Ixx - Izz)*x[:,6]*x[:,8] - Ixz*(x[:,6]**2 - x[:,8]**2))/Iyy
+    dr = (Ixz*L + Ixx*N + (Ixz*(Iyy - Ixx - Izz)*x[:,8] + (Ixz**2 + Ixx*(Ixx - Iyy))*x[:,6])*x[:,7])
+    dphi = x[:,6] + (x[:,7]*np.sin(x[:,9]) + x[:,8]*np.cos(x[:,9]))*np.tan(x[:,10])
+    dtheta = x[:,7]*np.cos(x[:,10]) - x[:,8]*np.sin(x[:,10])
+    dpsi = (x[:,7]*np.sin(x[:,10]) + x[:,8]*np.cos(x[:,10]))/np.cos(x[:,10])
 
     return np.array([du,dv,dw,dx,dy,dz,dp,dq,dr,dphi,dtheta,dpsi])
+
+def fly(xdot, tspan, x0):
+    h = 1e-2
+    t0, tf = tspan[0], tspan[1]
+    iter = round((tf-t0)/h)
+    x = np.zeros((int(iter+1),len(x0)))
+    x[0,:] = x0
+
+    for i in range(0,iter):
+        k1 = xdot(t0 + (i-1)*h, x[i,:])
+        k2 = xdot(t0 + (i-1)*h + h/2, x[i,:] + (h/2)*k1)
+        k3 = xdot(t0 + (i-1)*h + h/2, x[i,:] + (h/2)*k2)
+        k4 = xdot(t0 + (i-1)*h + h, x[i,:] + h*k3)
+        x[i+1,:] = x[i,:] + (h/6)*(k1+2*k2+2*k3+k4)
+
+    return x
+    
+
+print(fly(xdot, [0,2], np.array([10,0,0,0,0,0,0,0,0,0,0,0])))
