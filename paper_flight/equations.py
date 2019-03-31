@@ -28,6 +28,7 @@ g = -9.81       #m/s^2  -- Acceleration due to gravity
 S = 8211.5e-6   #m^2    -- Wing Area
 b = 139e-3      #m      -- Wing Span
 m = 5e-3        #kg     -- Plane Mass
+Cb = 138.041e-3 #m      -- Mean Chord
 Ixx = 4984.8e-9 #kg*m^2 -- X Area moment of Inertia
 Iyy = 29856e-9  #kg*m^2 -- Y Area Moment of Inertia
 Izz = 27664e-9  #kg*m^2 -- Z Area Moment of Inertia
@@ -66,9 +67,9 @@ def xdot(x):
     X = CX*qbar*S
     Y = CY*qbar*S
     Z = CZ*qbar*S
-    L = Cl*qbar*S
-    M = Cm*qbar*S
-    N = Cn*qbar*S
+    L = Cl*qbar*S*b
+    M = Cm*qbar*S*Cb
+    N = Cn*qbar*S*b
 
     #dynamic equations of motions
     du = X/m + g[0] + x[8]*x[1] - x[7]*x[2]
