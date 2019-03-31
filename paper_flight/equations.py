@@ -1,6 +1,6 @@
 import numpy as np 
 from coefficients import getCoefficients
-from transformations import all
+import transformations
 #solve paper airplane equations of motion
 #based on code by Robert F. Stengel
 #

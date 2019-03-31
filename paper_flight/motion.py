@@ -1,7 +1,7 @@
 import numpy as np 
 import matplotlib.pyplot as plt
-from scipy import integrate
-from equations import xdot
+import scipy
+import equations
 #integrate ode for given time interval
 #
 #@author Jonah Gourlay
@@ -21,4 +21,15 @@ from equations import xdot
 #x(11)  =   Inertial yaw angle,            psi,   rad 
 
 def fly(x0,t0,tf):
-    return 0
+    t = np.linspace(t0,tf,100)
+    x = np.zeros((len(t),len(x0)))
+    x[0, :] = x0
+    r = integrate.ode(xdot).set_integrator("dopri15")
+    r.set_initial_value(x0,t0)
+    for i in range(1, t.size):
+        x[i, :] = r.integrate(t[i])
+        if not r.successful():
+            raise RuntimeError("Could not integrate")
+    return [x,t]
+
+xt = fly([0,0,0,0,0,0,0,0,0,0,0,0],0,2)
