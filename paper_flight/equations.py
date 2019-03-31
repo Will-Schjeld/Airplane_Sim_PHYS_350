@@ -85,4 +85,4 @@ def xdot(x):
     dtheta = x[7]*np.cos(x[10]) - x[8]*np.sin(x[10])
     dpsi = (x[7]*np.sin(x[10]) + x[8]*np.cos(x[10]))/np.cos(x[10])
 
-    return np.matrix([[du],[dv],[dw],[dx],[dy],[dz],[dp],[dq],[dr],[dphi],[dtheta],[dpsi]])
+    return np.array([du,dv,dw,dx,dy,dz,dp,dq,dr,dphi,dtheta,dpsi])
