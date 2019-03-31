@@ -17,7 +17,7 @@ function coefs = GetCoefficients(x, alpha, beta, V)
     CLa = pi*AR/(1+sqrt(1+(AR/2)^2));
     CLqhat = -2*pi/3*CLa;
     CLq = CLqhat*Cb/(2*V);
-    CL = CLo + CLa*alpha + CLq*x(5);
+    CL = CLo + CLa*alpha + CLq*x(2); %check what x() it should be
 
     %Drag Coefficient (CD)
     CDo = 0.02;

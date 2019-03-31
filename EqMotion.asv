@@ -54,4 +54,4 @@ function eqns = EqMotion(t,x)
     thetadot = q*cos(phi) - r*sin(phi);
     psidot = (q*sin(phi) + r*cos(phi))*sec(theta);
     
-	eqns	=	[udot vdot wdot xdot ydot zdot pdot qdot rdot phidot thetadot psidot]';
+	eqns	=	[udot vdot wdot xdot ydot zdot phidot thetadot psidot]';

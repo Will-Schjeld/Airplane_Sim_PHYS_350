@@ -38,21 +38,21 @@
     v = 15.52*10^-6;       %mm^2/s -- Kinematic Viscosity of air @ 25 deg C
 	
 %   a) Equilibrium Glide at Maximum Lift/Drag Ratio
-	z		=	5;			% Initial Height, m
+	z		=	2;			% Initial Height, m
 	x		=	0;			% Initial x, m
     y       =   0;          % Initial y, m
 	to		=	0;			% Initial Time, sec
-	tf		=	.25;			% Final Time, sec
+	tf		=	.5;			% Final Time, sec
 	tspan	=	[to tf];
-	xo		=	[1 0 0 0 0 0 x y z pi/4 0 0]';         % Given as [u v w p q r x y z phi theta psi]
+	xo		=	[3 0 0 x y z 0 0 0 pi/4 0 0]';         % Given as [u v w x y z p q r phi theta psi]
 	[ta,xa]	=	ode23('EqMotion',tspan,xo);
     [tb,xb] =   ode23('EqMotion',tspan + tf, xa(end,:)');
     [tc,xc] =   ode23('EqMotion',tspan + 2*tf, xb(end,:)');
     
 
-    plot3(xa(:,7),xa(:,8),xa(:,9))
+    plot3(xa(:,4),xa(:,5),xa(:,6))
     hold on
-    plot3(xb(:,7),xb(:,8),xb(:,9))
+    plot3(xb(:,4),xb(:,5),xb(:,6))
     hold on
-    plot3(xc(:,7),xc(:,8),xc(:,9))
+    plot3(xc(:,4),xc(:,5),xc(:,6))
 	xlabel('Range X, m'), ylabel('Range Y, m'), zlabel('Height, m'), grid 
