@@ -3,80 +3,56 @@
     clc;
     clear;
     
-	global Ixx Iyy Izz Ixz A m g rho c b
-    Ixx     =   .005;              %TODO: CALCULATE
-    Iyy     =   .005;
-    Izz     =   .001;
-    Ixz     =   .002;
-    c       =   .1;             % chord length, m, complete guess ****************
-    b       =   .1;              % ?????
+	global Ixx Iyy Izz Ixz WA m g rho Cb WS AR e SM Cr v Fus G Ct zwing w k0 k1 FV
+    Ixx     =   6231*10^-9;              %TODO: CALCULATE
+    Iyy     =   37320*10^-9;
+    Izz     =   34580*10^-9;
+    Ixz     =   2646*10^-9;
     
-	A		=	0.017;			% Reference Area, m^2
-	AR		=	0.86;			% Wing Aspect Ratio. Wingspan / Chord
-	e		=	0.9;			% Oswald Efficiency Factor;
-	m		=	0.005;			% Mass, kg
-	g		=	9.81;			% Gravitational acceleration, m/s^2
-	rho		=	1.225;			% Air density at Sea Level, kg/m^3	
-	CLa		=	pi * AR/(1 + sqrt(1 + (AR / 2)^2));
-							% Lift-Coefficient Slope, per rad
-	CDo		=	0.02;			% Zero-Lift Drag Coefficient
-	epsilon	=	1 / (pi * e * AR);% Induced Drag Factor	
-	CL		=	sqrt(CDo / epsilon);	% CL for Maximum Lift/Drag Ratio
-	CD		=	CDo + epsilon * CL^2;	% Corresponding CD
-	LDmax	=	CL / CD;			% Maximum Lift/Drag Ratio
-	Gamma		=	-atan(1 / LDmax);	% Corresponding Flight Path Angle, rad
-	V		=	sqrt(2 * m * g /(rho * A * (CL * cos(Gamma) - CD * sin(Gamma))));
-							% Corresponding Velocity, m/s
-	Alpha	=	CL / CLa;			% Corresponding Angle of Attack, rad
+    m = .005;
+    g = -9.81;
+    rho = 1.225;
+       
+    %dimensional constants for dart shaped paper airplane
+    % sourced from: Natalia Cook's Thesis on paper airplane design
+    Fus = .0525;      %mm    -- Fuselage depth
+    w = .001;           %mm    -- Fuselage width
+    WA = 8211.5E-6;     %mm^2  -- Wing Area
+    WS = .139;        %mm    -- Wing Span
+    FV = 9765E-9;       %mm^3  -- Fuselage Volume
+    AR = 2.352;      %      -- Aspect Ratio
+    Ct = .074;         %mm    -- Tip Chord
+    Cr = .186;        %mm    -- Root Chord
+    Cb = .138041;    %mm    -- Mean Aerodynamic Chord
+    Ml = .140;        %mm    -- Mean Aerodynamic Chord Location
+    CG = .081;         %mm    -- Center of Gravity
+    SM = .059/Cr;      %mm    -- Static Margin
+    G = 5*pi/180; %rad   -- Dihedral Angle
+    e = 0.9;         %      -- Oswald Efficiency Factor
+    zwing = -.02885;  %mm    -- Distance of quarter chord below centerline
+    k0 = 0.075;      %      -- Wing Yaw First Order Coefficient
+    k1 = 0.175;      %      -- Wing Yaw Second Order Coefficient
+
+       
+    %environmental and material constants
+    v = 15.52*10^-6;       %mm^2/s -- Kinematic Viscosity of air @ 25 deg C
 	
 %   a) Equilibrium Glide at Maximum Lift/Drag Ratio
 	z		=	5;			% Initial Height, m
 	x		=	0;			% Initial x, m
     y       =   0;          % Initial y, m
 	to		=	0;			% Initial Time, sec
-	tf		=	1;			% Final Time, sec
+	tf		=	.25;			% Final Time, sec
 	tspan	=	[to tf];
-	xo		=	[2 0 0 0 0 0 x y z pi/3 pi/4 0]';         % Given as [u v w p q r x y z phi theta psi]
+	xo		=	[1 0 0 0 0 0 x y z pi/4 0 0]';         % Given as [u v w p q r x y z phi theta psi]
 	[ta,xa]	=	ode23('EqMotion',tspan,xo);
-	
-%	b) Oscillating Glide due to Zero Initial Flight Path Angle
-%	xo		=	[V;0;z;x];
-%   xb      = zeros(1,4);
-%   [tb,xb]	=	ode23('EqMotion',tspan,xo);
-
-    draw = false;
-	xmin = min(xa(:,7));
-    xmax = max(xa(:,7));
-    ymin = min(xa(:,8));
-    ymax = max(xa(:,8));
-    zmin = min(xa(:,9));
-    zmax = max(xa(:,9));
-    delta_t = ta(2) - ta(1);
+    [tb,xb] =   ode23('EqMotion',tspan + tf, xa(end,:)');
+    [tc,xc] =   ode23('EqMotion',tspan + 2*tf, xb(end,:)');
     
-    %animates the plot in real time
-if(draw)
-    for t = 1:5:length(ta)
-        plot3(xa(1:t,7),xa(1:t,8),xa(1:t,9)); %plots up to the specified time
-        axis([xmin xmax ymin ymax zmin zmax]);
-        drawnow;
-        pause(delta_t*5);
-    end
-else
-    plot3(xa(:,7),xa(:,8),xa(:,9));
-end
 
-%    plot(xa(:,4),xa(:,3),xb(:,4),xb(:,3))
+    plot3(xa(:,7),xa(:,8),xa(:,9))
+    hold on
+    plot3(xb(:,7),xb(:,8),xb(:,9))
+    hold on
+    plot3(xc(:,7),xc(:,8),xc(:,9))
 	xlabel('Range X, m'), ylabel('Range Y, m'), zlabel('Height, m'), grid 
-% 	figure
-% 	subplot(2,2,1)
-% 	plot(ta,xa(:,1),tb,xb(:,1))
-% 	xlabel('Time, s'), ylabel('Velocity, m/s'), grid
-% 	subplot(2,2,2)
-% 	plot(ta,xa(:,2),tb,xb(:,2))
-% 	xlabel('Time, s'), ylabel('Flight Path Angle, rad'), grid
-% 	subplot(2,2,3)
-% 	plot(ta,xa(:,3),tb,xb(:,3))
-% 	xlabel('Time, s'), ylabel('Altitude, m'), grid
-% 	subplot(2,2,4)
-% 	plot(ta,xa(:,4),tb,xb(:,4))
-% 	xlabel('Time, s'), ylabel('Range, m'), grid
