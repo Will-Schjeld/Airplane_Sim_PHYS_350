@@ -21,7 +21,11 @@ from equations import xdot
 #x(10)  =   Inertial pitch angle,          theta, rad  
 #x(11)  =   Inertial yaw angle,            psi,   rad 
 
+<<<<<<< HEAD
 def fly(xdot, tspan, x0):
+=======
+def fly(xdot, tspan, x0, wind):
+>>>>>>> jonahBranch
     h = 1e-2
     t0, tf = tspan[0], tspan[1]
     iter = round((tf-t0)/h)
@@ -32,10 +36,10 @@ def fly(xdot, tspan, x0):
         if(x[i,5] <= -1.2):
             t = np.linspace(t0,(i-1)*h,i)
             return [x,t]
-        k1 = xdot(t0 + (i-1)*h, x[i,:])
-        k2 = xdot(t0 + (i-1)*h + h/2, x[i,:] + (h/2)*k1)
-        k3 = xdot(t0 + (i-1)*h + h/2, x[i,:] + (h/2)*k2)
-        k4 = xdot(t0 + (i-1)*h + h, x[i,:] + h*k3)
+        k1 = xdot(t0 + (i-1)*h, x[i,:], wind)
+        k2 = xdot(t0 + (i-1)*h + h/2, x[i,:] + (h/2)*k1, wind)
+        k3 = xdot(t0 + (i-1)*h + h/2, x[i,:] + (h/2)*k2, wind)
+        k4 = xdot(t0 + (i-1)*h + h, x[i,:] + h*k3, wind)
         x[i+1,:] = x[i,:] + (h/6)*(k1+2*k2+2*k3+k4)
 
     t = np.linspace(t0,tf,iter+1)
@@ -43,7 +47,7 @@ def fly(xdot, tspan, x0):
     return [x,t]
     
 #test flight
-[x,t] = fly(xdot, [0,5], np.array([10,4,5,0,0,0,0,0,0,0,0,0]))
+[x,t] = fly(xdot, [0,5], np.array([10,4,5,0,0,0,0,0,0,0,0,0]), np.array([0,0,0]))
 fig = plt.figure()
 ax = plt.axes(projection='3d')
 ax.plot3D(x[0:len(t),3],x[0:len(t),4],x[0:len(t),5])
