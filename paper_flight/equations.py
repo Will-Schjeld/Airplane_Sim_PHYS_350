@@ -22,7 +22,7 @@ import transformations
 #x(11)  =   Inertial yaw angle,            psi,   rad 
 
 #environmental constants @25 deg C and atmospheric pressure
-dens = 1.1839e-6#g/mm^3 -- Density of Air
+dens = 1.1839e-6#g/mm^3  -- Density of Air
 g = -9810       #mm/s^2  -- Acceleration due to gravity 
 
 #material and geometric constants

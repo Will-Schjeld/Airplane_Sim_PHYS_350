@@ -39,7 +39,7 @@ def fly(xdot, tspan, x0):
 
     return [x,t]
     
-
+#test flight
 [x,t] = fly(xdot, [0,2], np.array([30,10,20,0,0,18288,0,0,0,0,np.pi/10,0]))
 fig = plt.figure()
 ax = plt.axes(projection='3d')
