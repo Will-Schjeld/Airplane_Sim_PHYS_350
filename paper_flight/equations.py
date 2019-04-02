@@ -23,17 +23,17 @@ import transformations
 
 #environmental constants @25 deg C and atmospheric pressure
 dens = 1.1839e-6   #g/mm^3  -- Density of Air
-g = -9810          #mm/s^2  -- Acceleration due to gravity 
+g = -9810e-3       #mm/s^2  -- Acceleration due to gravity 
 
 #material and geometric constants
-S = 8211.5      #mm^2   -- Wing Area
-b = 139         #mm     -- Wing Span
-m = 5           #g      -- Plane Mass
-Cb = 138.041    #mm     -- Mean Chord
-Ixx = 4984.8    #g*mm^2 -- X Area moment of Inertia
-Iyy = 29856     #g*mm^2 -- Y Area Moment of Inertia
-Izz = 27664     #g*mm^2 -- Z Area Moment of Inertia
-Ixz = 27664     #g*mm^2 -- XZ Area Moment of Inertia
+S = 8211.5e-6      #mm^2   -- Wing Area
+b = 139e-3         #mm     -- Wing Span
+m = 5e-3           #g      -- Plane Mass
+Cb = 138.041e-3    #mm     -- Mean Chord
+Ixx = 4984.8e-9    #g*mm^2 -- X Area moment of Inertia
+Iyy = 29856e-9     #g*mm^2 -- Y Area Moment of Inertia
+Izz = 27664e-9     #g*mm^2 -- Z Area Moment of Inertia
+Ixz = 27664e-9     #g*mm^2 -- XZ Area Moment of Inertia
 
 #return the state equations
 def xdot(t,x):

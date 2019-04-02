@@ -6,26 +6,26 @@ import numpy as np
 
 #dimensional constants for dart shaped paper airplane
 #sourced from: Natalia Cook's Thesis on paper airplane design
-Fus = 52.5      #mm    -- Fuselage depth
-w = 1           #mm    -- Fuselage width
-WA = 8211.5     #mm^2  -- Wing Area
-WS = 139        #mm    -- Wing Span
-FV = 9765       #mm^3  -- Fuselage Volume
-AR = 2.352      #      -- Aspect Ratio
-Ct = 74         #mm    -- Tip Chord
-Cr = 186        #mm    -- Root Chord
-Cb = 138.041    #mm    -- Mean Aerodynamic Chord
-Ml = 140        #mm    -- Mean Aerodynamic Chord Location
-CG = 81         #mm    -- Center of Gravity
-SM = (59/Cr)*1  #mm    -- Static Margin
-G = 5*np.pi/180 #rad   -- Dihedral Angle
-e = 0.9         #      -- Oswald Efficiency Factor
-zwing = -28.85  #mm    -- Distance of quarter chord below centerline
-k0 = 0.075      #      -- Wing Yaw First Order Coefficient
-k1 = 0.175      #      -- Wing Yaw Second Order Coefficient
+Fus = 52.5e-3      #mm    -- Fuselage depth
+w = 1e-3           #mm    -- Fuselage width
+WA = 8211.5e-6     #mm^2  -- Wing Area
+WS = 139e-3        #mm    -- Wing Span
+FV = 9765e-9       #mm^3  -- Fuselage Volume
+AR = 2.352         #      -- Aspect Ratio
+Ct = 74e-3         #mm    -- Tip Chord
+Cr = 186e-3        #mm    -- Root Chord
+Cb = 138.041e-3    #mm    -- Mean Aerodynamic Chord
+Ml = 140e-3        #mm    -- Mean Aerodynamic Chord Location
+CG = 81e-3         #mm    -- Center of Gravity
+SM = (59/Cr)*1e-3  #mm    -- Static Margin
+G = 5*np.pi/180    #rad   -- Dihedral Angle
+e = 0.9            #      -- Oswald Efficiency Factor
+zwing = -28.85e-3  #mm    -- Distance of quarter chord below centerline
+k0 = 0.075         #      -- Wing Yaw First Order Coefficient
+k1 = 0.175         #      -- Wing Yaw Second Order Coefficient
 
 #environmental and material constants
-v = 15.52       #mm^2/s -- Kinematic Viscosity of air @ 25 deg C
+v = 15.52e-6       #mm^2/s -- Kinematic Viscosity of air @ 25 deg C
 
 #takes the angle of attack and pitch rate in the body frame
 #and returns the static aerodynamic constants [CD, CL, CY, Cl, Cm, Cn]
