@@ -21,11 +21,7 @@ from equations import xdot
 #x(10)  =   Inertial pitch angle,          theta, rad  
 #x(11)  =   Inertial yaw angle,            psi,   rad 
 
-<<<<<<< HEAD
-def fly(xdot, tspan, x0):
-=======
 def fly(xdot, tspan, x0, wind):
->>>>>>> jonahBranch
     h = 1e-2
     t0, tf = tspan[0], tspan[1]
     iter = round((tf-t0)/h)
