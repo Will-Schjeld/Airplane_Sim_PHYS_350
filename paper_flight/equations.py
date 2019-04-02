@@ -22,26 +22,23 @@ import transformations
 #x(11)  =   Inertial yaw angle,            psi,   rad 
 
 #environmental constants @25 deg C and atmospheric pressure
-dens = 1.1839      #kg/m^3  -- Density of Air
+dens = 1.1839      #kg/m^3 -- Density of Air
 g = -9810e-3       #m/s^2  -- Acceleration due to gravity 
 
 #material and geometric constants
-S = 8211.5e-6      #m^2   -- Wing Area
-b = 139e-3         #m     -- Wing Span
-m = 5e-3           #kg      -- Plane Mass
-Cb = 138.041e-3    #m     -- Mean Chord
+S = 8211.5e-6      #m^2    -- Wing Area
+b = 139e-3         #m      -- Wing Span
+m = 5e-3           #kg     -- Plane Mass
+Cb = 138.041e-3    #m      -- Mean Chord
 Ixx = 4984.8e-9    #kg*m^2 -- X Area moment of Inertia
 Iyy = 29856e-9     #kg*m^2 -- Y Area Moment of Inertia
 Izz = 27664e-9     #kg*m^2 -- Z Area Moment of Inertia
-Ixz = 2116.8e-9     #kg*m^2 -- XZ Area Moment of Inertia
-wx = 5
-wy = 4
-wz = -0.5
+Ixz = 2116.8e-9    #kg*m^2 -- XZ Area Moment of Inertia
 
 #return the state equations
-def xdot(t,x):
+def xdot(t,x,w):
     #body relative windfield
-    wind = np.dot(transformations.HIB(x[9],x[10],x[11]), np.matrix([[wx],[wy],[wz]]))
+    wind = np.dot(transformations.HIB(x[9],x[10],x[11]), np.matrix([[w.item(0)],[w.item(1)],[w.item(2)]]))
     #air relative velocity field
     Vair = np.array([x[0],x[1],x[2]])+np.transpose(wind)
     #body relative gravity field
