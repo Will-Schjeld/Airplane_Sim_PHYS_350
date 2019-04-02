@@ -21,15 +21,19 @@ function eqns = EqMotion(t,x)
     gz = g*cos(phi)*cos(theta);
     
     coefs = GetCoefficients(x,alpha,beta,Va);
-    Drag = coefs(1)*qbar*WA;
-    SF = coefs(2)*qbar*WA;
-    Lift = coefs(3)*qbar*WA;
-    HI1 = [cos(psi) sin(psi) 0; -sin(psi) cos(psi) 0 ; 0 0 1];
-    H12 = [cos(theta) 0 -sin(theta) ; 0 1 0 ; sin(theta) 0 cos(theta)];
-    H2B = [1 0 0 ; 0 cos(phi) sin(phi); 0 -sin(phi) cos(phi)];
-    HIB = H2B * H12 * HI1;
     
-    faero = HIB * [-Drag SF -Lift]'; %[X Y Z]
+    %X-direction Body Force Coefficient (CX)
+    CX = -coefs(1)*cos(alpha) + coefs(2)*sin(alpha);
+
+    %Y-direction Body Force Coefficient (CY)
+    CY = coefs(2);
+    
+    %Z-direction Body Force Coefficient (CZ)
+    CZ = -coefs(1)*sin(alpha) - coefs(2)*cos(alpha);
+ 
+    
+    faero = [CX CY CZ]' * qbar * WA;
+    
     L = coefs(4) * qbar * WA * WS;
     M = coefs(5) * qbar * WA * Cb;
     N = coefs(6) * qbar * WA * WS;
