@@ -22,7 +22,7 @@ from equations import xdot
 #x(11)  =   Inertial yaw angle,            psi,   rad 
 
 def fly(xdot, tspan, x0):
-    h = 1e-2
+    h = 1e-3
     t0, tf = tspan[0], tspan[1]
     iter = round((tf-t0)/h)
     x = np.zeros((int(iter+1),len(x0)))
@@ -43,11 +43,11 @@ def fly(xdot, tspan, x0):
     return [x,t]
     
 #test flight
-[x,t] = fly(xdot, [0,5], np.array([10,4,5,0,0,0,0,0,0,0,np.pi/8,0]))
+[x,t] = fly(xdot, [0,5], np.array([10,4,5,0,0,0,0,0,0,0,0,0]))
 fig = plt.figure()
 ax = plt.axes(projection='3d')
 ax.plot3D(x[0:len(t),3],x[0:len(t),4],x[0:len(t),5])
 ax.set_xlim(0,2)
 ax.set_ylim(0,2)
-ax.set_zlim(-1.2,0)
+ax.set_zlim(-1.2,3)
 plt.show()

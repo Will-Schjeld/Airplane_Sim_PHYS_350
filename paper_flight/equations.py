@@ -33,7 +33,7 @@ Cb = 138.041e-3    #m     -- Mean Chord
 Ixx = 4984.8e-9    #kg*m^2 -- X Area moment of Inertia
 Iyy = 29856e-9     #kg*m^2 -- Y Area Moment of Inertia
 Izz = 27664e-9     #kg*m^2 -- Z Area Moment of Inertia
-Ixz = 27664e-9     #kg*m^2 -- XZ Area Moment of Inertia
+Ixz = 2116.8e-9     #kg*m^2 -- XZ Area Moment of Inertia
 
 #return the state equations
 def xdot(t,x):
