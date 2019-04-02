@@ -34,22 +34,23 @@ Ixx = 4984.8e-9    #kg*m^2 -- X Area moment of Inertia
 Iyy = 29856e-9     #kg*m^2 -- Y Area Moment of Inertia
 Izz = 27664e-9     #kg*m^2 -- Z Area Moment of Inertia
 Ixz = 2116.8e-9     #kg*m^2 -- XZ Area Moment of Inertia
+wx = 5
+wy = 4
+wz = -0.5
 
 #return the state equations
 def xdot(t,x):
     #body relative windfield
-    #wind = transformations.HIB(x[9],x[10],x[11])*np.matrix([[wx],[wy],[wx]])
-
+    wind = np.dot(transformations.HIB(x[9],x[10],x[11]), np.matrix([[wx],[wy],[wz]]))
     #air relative velocity field
-    Vair = np.array([x[0],x[1],x[2]])#+wind
-
+    Vair = np.array([x[0],x[1],x[2]])+np.transpose(wind)
     #body relative gravity field
     gb = transformations.HIB(x[9],x[10],x[11])*np.matrix([[0],[0],[g]])
 
     #constants
     V = np.linalg.norm(Vair,2)
-    alpha = np.arctan(Vair[2]/Vair[0])
-    beta = np.arcsin(Vair[1]/V)
+    alpha = np.arctan(Vair[0,2]/Vair[0,0])
+    beta = np.arcsin(Vair[0,1]/V)
     qbar = 0.5*dens*V**2
     y = np.dot(np.transpose(transformations.HIB(x[9],x[10],x[11])), np.matrix([[x.item(0)],[x.item(1)],[x.item(2)]]))
 
