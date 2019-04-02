@@ -17,7 +17,7 @@ Cr = 186e-3        #mm    -- Root Chord
 Cb = 138.041e-3    #mm    -- Mean Aerodynamic Chord
 Ml = 140e-3        #mm    -- Mean Aerodynamic Chord Location
 CG = 81e-3         #mm    -- Center of Gravity
-SM = (59/Cr)*1e-3  #mm    -- Static Margin
+SM = 59e-3         #mm    -- Static Margin
 G = 5*np.pi/180    #rad   -- Dihedral Angle
 e = 0.9            #      -- Oswald Efficiency Factor
 zwing = -28.85e-3  #mm    -- Distance of quarter chord below centerline
@@ -25,7 +25,7 @@ k0 = 0.075         #      -- Wing Yaw First Order Coefficient
 k1 = 0.175         #      -- Wing Yaw Second Order Coefficient
 
 #environmental and material constants
-v = 15.52e-6       #mm^2/s -- Kinematic Viscosity of air @ 25 deg C
+v = 15.52e-6       #m^2/s -- Kinematic Viscosity of air @ 25 deg C
 
 #takes the angle of attack and pitch rate in the body frame
 #and returns the static aerodynamic constants [CD, CL, CY, Cl, Cm, Cn]

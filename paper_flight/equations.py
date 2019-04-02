@@ -22,18 +22,18 @@ import transformations
 #x(11)  =   Inertial yaw angle,            psi,   rad 
 
 #environmental constants @25 deg C and atmospheric pressure
-dens = 1.1839e-6   #g/mm^3  -- Density of Air
-g = -9810e-3       #mm/s^2  -- Acceleration due to gravity 
+dens = 1.1839      #kg/m^3  -- Density of Air
+g = -9810e-3       #m/s^2  -- Acceleration due to gravity 
 
 #material and geometric constants
-S = 8211.5e-6      #mm^2   -- Wing Area
-b = 139e-3         #mm     -- Wing Span
-m = 5e-3           #g      -- Plane Mass
-Cb = 138.041e-3    #mm     -- Mean Chord
-Ixx = 4984.8e-9    #g*mm^2 -- X Area moment of Inertia
-Iyy = 29856e-9     #g*mm^2 -- Y Area Moment of Inertia
-Izz = 27664e-9     #g*mm^2 -- Z Area Moment of Inertia
-Ixz = 27664e-9     #g*mm^2 -- XZ Area Moment of Inertia
+S = 8211.5e-6      #m^2   -- Wing Area
+b = 139e-3         #m     -- Wing Span
+m = 5e-3           #kg      -- Plane Mass
+Cb = 138.041e-3    #m     -- Mean Chord
+Ixx = 4984.8e-9    #kg*m^2 -- X Area moment of Inertia
+Iyy = 29856e-9     #kg*m^2 -- Y Area Moment of Inertia
+Izz = 27664e-9     #kg*m^2 -- Z Area Moment of Inertia
+Ixz = 27664e-9     #kg*m^2 -- XZ Area Moment of Inertia
 
 #return the state equations
 def xdot(t,x):
@@ -73,17 +73,17 @@ def xdot(t,x):
     N = Cn*qbar*S*b
 
     #dynamic equations of motions
-    du = float(X/m + gb[0] + x[8]*x[1] - x[7]*x[2])
-    dv = float(Y/m + gb[1] - x[8]*x[0] + x[6]*x[2])
-    dw = float(Z/m + gb[2] + x[7]*x[0] - x[6]*x[1])
-    dx = float(y[0])
-    dy = float(y[1])
-    dz = float(y[2])
-    dp = float((Izz*L + Ixz*N - (Ixz*(Iyy - Ixx - Izz)*x[6] + (Ixz**2 + Izz*(Izz - Iyy))*x[8])*x[7])/(Ixx*Izz - Ixz**2))
-    dq = float((M - (Ixx - Izz)*x[6]*x[8] - Ixz*(x[6]**2 - x[8]**2))/Iyy)
-    dr = float((Ixz*L + Ixx*N + (Ixz*(Iyy - Ixx - Izz)*x[8] + (Ixz**2 + Ixx*(Ixx - Iyy))*x[6])*x[7])/(Ixx*Izz - Ixz**2))
-    dphi = float(x[6] + (x[7]*np.sin(x[9]) + x[8]*np.cos(x[9]))*np.tan(x[10]))
-    dtheta = float(x[7]*np.cos(x[9]) - x[8]*np.sin(x[9]))
-    dpsi = float((x[7]*np.sin(x[9]) + x[8]*np.cos(x[9]))/np.cos(x[10]))
+    du =    float(X/m + gb[0] + x[8]*x[1] - x[7]*x[2])
+    dv =    float(Y/m + gb[1] - x[8]*x[0] + x[6]*x[2])
+    dw =    float(Z/m + gb[2] + x[7]*x[0] - x[6]*x[1])
+    dx =    float(y[0])
+    dy =    float(y[1])
+    dz =    float(y[2])
+    dp =    float((Izz*L + Ixz*N - (Ixz*(Iyy - Ixx - Izz)*x[6] + (Ixz**2 + Izz*(Izz - Iyy))*x[8])*x[7])/(Ixx*Izz - Ixz**2))
+    dq =    float((M - (Ixx - Izz)*x[6]*x[8] - Ixz*(x[6]**2 - x[8]**2))/Iyy)
+    dr =    float((Ixz*L + Ixx*N + (Ixz*(Iyy - Ixx - Izz)*x[8] + (Ixz**2 + Ixx*(Ixx - Iyy))*x[6])*x[7])/(Ixx*Izz - Ixz**2))
+    dphi =  float(x[6] + (x[7]*np.sin(x[9]) + x[8]*np.cos(x[9]))*np.tan(x[10]))
+    dtheta =float(x[7]*np.cos(x[9]) - x[8]*np.sin(x[9]))
+    dpsi =  float((x[7]*np.sin(x[9]) + x[8]*np.cos(x[9]))/np.cos(x[10]))
 
     return np.array([du,dv,dw,dx,dy,dz,dp,dq,dr,dphi,dtheta,dpsi])
