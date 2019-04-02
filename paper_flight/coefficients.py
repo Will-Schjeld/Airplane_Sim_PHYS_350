@@ -103,13 +103,3 @@ def getCoefficients(x, alpha, beta, V):
     Cn = Cno + Cnb*beta + Cnp*x[6] + Cnr*x[8]
 
     return [CD, CL, CX, CY, CZ, Cl, Cm, Cn]
-
-    
-
-
-    
-
-
-
-
-

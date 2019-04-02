@@ -22,18 +22,18 @@ import transformations
 #x(11)  =   Inertial yaw angle,            psi,   rad 
 
 #environmental constants @25 deg C and atmospheric pressure
-dens = 1.1839   #kg/m^3 -- Density of Air
-g = -9.81       #m/s^2  -- Acceleration due to gravity 
+dens = 1.1839e-6#g/mm^3 -- Density of Air
+g = -9810       #mm/s^2  -- Acceleration due to gravity 
 
 #material and geometric constants
-S = 8211.5e-6   #m^2    -- Wing Area
-b = 139e-3      #m      -- Wing Span
-m = 5e-3        #kg     -- Plane Mass
-Cb = 138.041e-3 #m      -- Mean Chord
-Ixx = 4984.8e-9 #kg*m^2 -- X Area moment of Inertia
-Iyy = 29856e-9  #kg*m^2 -- Y Area Moment of Inertia
-Izz = 27664e-9  #kg*m^2 -- Z Area Moment of Inertia
-Ixz = 27664e-9  #kg*m^2 -- XZ Area Moment of Inertia
+S = 8211.5      #mm^2   -- Wing Area
+b = 139         #mm     -- Wing Span
+m = 5           #g      -- Plane Mass
+Cb = 138.041    #mm     -- Mean Chord
+Ixx = 4984.8    #g*mm^2 -- X Area moment of Inertia
+Iyy = 29856     #g*mm^2 -- Y Area Moment of Inertia
+Izz = 27664     #g*mm^2 -- Z Area Moment of Inertia
+Ixz = 27664     #g*mm^2 -- XZ Area Moment of Inertia
 
 #return the state equations
 def xdot(t,x):
@@ -41,17 +41,17 @@ def xdot(t,x):
     #wind = transformations.HIB(x[9],x[10],x[11])*np.matrix([[wx],[wy],[wx]])
 
     #air relative velocity field
-    Vair = np.matrix([[x[:,0]],[x[:,1]],[x[:,2]]])#+wind
+    Vair = np.array([x[0],x[1],x[2]])#+wind
 
     #body relative gravity field
-    gb = transformations.HIB(x[:,9],x[:,10],x[:,11])*np.matrix([[0],[0],[g]])
+    gb = transformations.HIB(x[9],x[10],x[11])*np.matrix([[0],[0],[g]])
 
     #constants
     V = np.linalg.norm(Vair,2)
     alpha = np.arctan(Vair[2]/Vair[0])
     beta = np.arcsin(Vair[1]/V)
     qbar = 0.5*dens*V**2
-    y = np.transpose(transformations.HIB(x[:,9],x[:,10],x[:,11]))*np.matrix([[x[:,0]],[x[:,1]],[x[:,2]]])
+    y = np.dot(np.transpose(transformations.HIB(x[9],x[10],x[11])), np.matrix([[x.item(0)],[x.item(1)],[x.item(2)]]))
 
     #coefficients
     coef = getCoefficients(x,alpha,beta,V)
@@ -73,36 +73,17 @@ def xdot(t,x):
     N = Cn*qbar*S*b
 
     #dynamic equations of motions
-    du = X/m + gb[0] + x[:,8]*x[:,1] - x[:,7]*x[:,2]
-    dv = Y/m + gb[1] - x[:,8]*x[:,0] + x[:,6]*x[:,2]
-    dw = Z/m + gb[2] + x[:,7]*x[:,0] - x[:,6]*x[:,1]
-    dx = y[0]
-    dy = y[1]
-    dz = y[2]
-    dp = (Izz*L + Ixz*N - (Ixz*(Iyy - Ixx - Izz)*x[:,6] + (Ixz**2 + Izz*(Izz - Iyy))*x[:,8])*x[:,7])
-    dq = (M - (Ixx - Izz)*x[:,6]*x[:,8] - Ixz*(x[:,6]**2 - x[:,8]**2))/Iyy
-    dr = (Ixz*L + Ixx*N + (Ixz*(Iyy - Ixx - Izz)*x[:,8] + (Ixz**2 + Ixx*(Ixx - Iyy))*x[:,6])*x[:,7])
-    dphi = x[:,6] + (x[:,7]*np.sin(x[:,9]) + x[:,8]*np.cos(x[:,9]))*np.tan(x[:,10])
-    dtheta = x[:,7]*np.cos(x[:,10]) - x[:,8]*np.sin(x[:,10])
-    dpsi = (x[:,7]*np.sin(x[:,10]) + x[:,8]*np.cos(x[:,10]))/np.cos(x[:,10])
+    du = float(X/m + gb[0] + x[8]*x[1] - x[7]*x[2])
+    dv = float(Y/m + gb[1] - x[8]*x[0] + x[6]*x[2])
+    dw = float(Z/m + gb[2] + x[7]*x[0] - x[6]*x[1])
+    dx = float(y[0])
+    dy = float(y[1])
+    dz = float(y[2])
+    dp = float((Izz*L + Ixz*N - (Ixz*(Iyy - Ixx - Izz)*x[6] + (Ixz**2 + Izz*(Izz - Iyy))*x[8])*x[7])/(Ixx*Izz - Ixz**2))
+    dq = float((M - (Ixx - Izz)*x[6]*x[8] - Ixz*(x[6]**2 - x[8]**2))/Iyy)
+    dr = float((Ixz*L + Ixx*N + (Ixz*(Iyy - Ixx - Izz)*x[8] + (Ixz**2 + Ixx*(Ixx - Iyy))*x[6])*x[7])/(Ixx*Izz - Ixz**2))
+    dphi = float(x[6] + (x[7]*np.sin(x[9]) + x[8]*np.cos(x[9]))*np.tan(x[10]))
+    dtheta = float(x[7]*np.cos(x[9]) - x[8]*np.sin(x[9]))
+    dpsi = float((x[7]*np.sin(x[9]) + x[8]*np.cos(x[9]))/np.cos(x[10]))
 
     return np.array([du,dv,dw,dx,dy,dz,dp,dq,dr,dphi,dtheta,dpsi])
-
-def fly(xdot, tspan, x0):
-    h = 1e-2
-    t0, tf = tspan[0], tspan[1]
-    iter = round((tf-t0)/h)
-    x = np.zeros((int(iter+1),len(x0)))
-    x[0,:] = x0
-
-    for i in range(0,iter):
-        k1 = xdot(t0 + (i-1)*h, x[i,:])
-        k2 = xdot(t0 + (i-1)*h + h/2, x[i,:] + (h/2)*k1)
-        k3 = xdot(t0 + (i-1)*h + h/2, x[i,:] + (h/2)*k2)
-        k4 = xdot(t0 + (i-1)*h + h, x[i,:] + h*k3)
-        x[i+1,:] = x[i,:] + (h/6)*(k1+2*k2+2*k3+k4)
-
-    return x
-    
-
-print(fly(xdot, [0,2], np.array([10,0,0,0,0,0,0,0,0,0,0,0])))
