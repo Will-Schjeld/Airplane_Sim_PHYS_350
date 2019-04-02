@@ -26,7 +26,7 @@ function eqns = EqMotion(t,x)
     CX = -coefs(1)*cos(alpha) + coefs(2)*sin(alpha);
 
     %Y-direction Body Force Coefficient (CY)
-    CY = coefs(2);
+    CY = coefs(3);
     
     %Z-direction Body Force Coefficient (CZ)
     CZ = -coefs(1)*sin(alpha) - coefs(2)*cos(alpha);
