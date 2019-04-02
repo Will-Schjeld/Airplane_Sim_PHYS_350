@@ -40,9 +40,12 @@ def fly(xdot, tspan, x0):
     return [x,t]
     
 #test flight
-[x,t] = fly(xdot, [0,2], np.array([30,10,20,0,0,18288,0,0,0,0,np.pi/10,0]))
+[x,t] = fly(xdot, [0,2], np.array([30,5,4,0,0,0,0,0,0,np.pi/4,np.pi/10,np.pi/5]))
 fig = plt.figure()
 ax = plt.axes(projection='3d')
 ax.plot3D(x[:,3],x[:,4],x[:,5])
-ax.set_zlim(0,20000)
+#ax.set_zlim(0,1) 
+ax.set_xlim(0,1000)
+ax.set_ylim(0,1000)
+ax.set_zlim(0,-1000)
 plt.show()
