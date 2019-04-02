@@ -22,7 +22,7 @@ from equations import xdot
 #x(11)  =   Inertial yaw angle,            psi,   rad 
 
 def fly(xdot, tspan, x0):
-    h = 1e-3
+    h = 1e-2
     t0, tf = tspan[0], tspan[1]
     iter = round((tf-t0)/h)
     x = np.zeros((int(iter+1),len(x0)))
