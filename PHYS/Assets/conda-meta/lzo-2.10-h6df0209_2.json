@@ -1,0 +1,51 @@
+{
+  "arch": "x86_64",
+  "build": "h6df0209_2",
+  "build_number": 2,
+  "depends": [
+    "vc 14.*"
+  ],
+  "files": [
+    "Library/bin/lzo2.dll",
+    "Library/include/lzo/lzo1.h",
+    "Library/include/lzo/lzo1a.h",
+    "Library/include/lzo/lzo1b.h",
+    "Library/include/lzo/lzo1c.h",
+    "Library/include/lzo/lzo1f.h",
+    "Library/include/lzo/lzo1x.h",
+    "Library/include/lzo/lzo1y.h",
+    "Library/include/lzo/lzo1z.h",
+    "Library/include/lzo/lzo2a.h",
+    "Library/include/lzo/lzo_asm.h",
+    "Library/include/lzo/lzoconf.h",
+    "Library/include/lzo/lzodefs.h",
+    "Library/include/lzo/lzoutil.h",
+    "Library/lib/lzo2.lib",
+    "Library/lib/lzo2_dllimport.lib",
+    "Library/libexec/lzo/examples/lzopack.exe",
+    "Library/libexec/lzo/examples/lzotest.exe",
+    "Library/libexec/lzo/examples/simple.exe",
+    "Library/libexec/lzo/examples/testmini.exe",
+    "Library/share/doc/lzo/AUTHORS",
+    "Library/share/doc/lzo/COPYING",
+    "Library/share/doc/lzo/LZO.FAQ",
+    "Library/share/doc/lzo/LZO.TXT",
+    "Library/share/doc/lzo/LZOAPI.TXT",
+    "Library/share/doc/lzo/NEWS",
+    "Library/share/doc/lzo/THANKS"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "GPL v2+",
+  "license_family": "GPL2",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\lzo-2.10-h6df0209_2",
+    "type": "hard-link"
+  },
+  "md5": "df1d264574ac1767afe7aaff92aa5f15",
+  "name": "lzo",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1511294422945,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/lzo-2.10-h6df0209_2.tar.bz2",
+  "version": "2.10"
+}

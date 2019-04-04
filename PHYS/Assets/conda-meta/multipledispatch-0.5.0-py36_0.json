@@ -1,0 +1,39 @@
+{
+  "arch": "x86_64",
+  "build": "py36_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/multipledispatch-0.5.0-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/multipledispatch-0.5.0-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/multipledispatch-0.5.0-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/multipledispatch-0.5.0-py3.6.egg-info/not-zip-safe",
+    "Lib/site-packages/multipledispatch-0.5.0-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/multipledispatch/__init__.py",
+    "Lib/site-packages/multipledispatch/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/multipledispatch/__pycache__/conflict.cpython-36.pyc",
+    "Lib/site-packages/multipledispatch/__pycache__/core.cpython-36.pyc",
+    "Lib/site-packages/multipledispatch/__pycache__/dispatcher.cpython-36.pyc",
+    "Lib/site-packages/multipledispatch/__pycache__/utils.cpython-36.pyc",
+    "Lib/site-packages/multipledispatch/conflict.py",
+    "Lib/site-packages/multipledispatch/core.py",
+    "Lib/site-packages/multipledispatch/dispatcher.py",
+    "Lib/site-packages/multipledispatch/utils.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "BSD 3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\multipledispatch-0.5.0-py36_0",
+    "type": "hard-link"
+  },
+  "md5": "a3a0e6c16eb8ba0a38f78fdb382163cb",
+  "name": "multipledispatch",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1520522058961,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/multipledispatch-0.5.0-py36_0.tar.bz2",
+  "version": "0.5.0"
+}

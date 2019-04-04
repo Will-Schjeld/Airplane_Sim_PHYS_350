@@ -1,0 +1,26 @@
+{
+  "arch": "x86_64",
+  "build": "py36hfed976d_1",
+  "build_number": 1,
+  "depends": [
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/locket-0.2.0-py3.6.egg-info",
+    "Lib/site-packages/locket/__init__.py",
+    "Lib/site-packages/locket/__pycache__/__init__.cpython-36.pyc"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "BSD 2-Clause",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\locket-0.2.0-py36hfed976d_1",
+    "type": "hard-link"
+  },
+  "md5": "4745573b39485e88e274e6e667c5bb33",
+  "name": "locket",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1506005893010,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/locket-0.2.0-py36hfed976d_1.tar.bz2",
+  "version": "0.2.0"
+}

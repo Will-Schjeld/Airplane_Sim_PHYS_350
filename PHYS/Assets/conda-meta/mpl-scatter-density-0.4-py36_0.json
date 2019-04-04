@@ -1,0 +1,584 @@
+{
+  "arch": "x86_64",
+  "build": "py36_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "fast-histogram >=0.3",
+    "matplotlib >=1.5",
+    "numpy >=1.11",
+    "python >=3.6,<3.7.0a0"
+  ],
+  "extracted_package_dir": "C:\\Users\\danie\\Anaconda3\\pkgs\\mpl-scatter-density-0.4-py36_0",
+  "features": "",
+  "files": [
+    "Lib/site-packages/mpl_scatter_density-0.4.dist-info/INSTALLER",
+    "Lib/site-packages/mpl_scatter_density-0.4.dist-info/METADATA",
+    "Lib/site-packages/mpl_scatter_density-0.4.dist-info/RECORD",
+    "Lib/site-packages/mpl_scatter_density-0.4.dist-info/WHEEL",
+    "Lib/site-packages/mpl_scatter_density-0.4.dist-info/top_level.txt",
+    "Lib/site-packages/mpl_scatter_density/__init__.py",
+    "Lib/site-packages/mpl_scatter_density/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/mpl_scatter_density/__pycache__/color.cpython-36.pyc",
+    "Lib/site-packages/mpl_scatter_density/__pycache__/fixed_data_density_helper.cpython-36.pyc",
+    "Lib/site-packages/mpl_scatter_density/__pycache__/generic_density_artist.cpython-36.pyc",
+    "Lib/site-packages/mpl_scatter_density/__pycache__/scatter_density_artist.cpython-36.pyc",
+    "Lib/site-packages/mpl_scatter_density/__pycache__/scatter_density_axes.cpython-36.pyc",
+    "Lib/site-packages/mpl_scatter_density/color.py",
+    "Lib/site-packages/mpl_scatter_density/fixed_data_density_helper.py",
+    "Lib/site-packages/mpl_scatter_density/generic_density_artist.py",
+    "Lib/site-packages/mpl_scatter_density/scatter_density_artist.py",
+    "Lib/site-packages/mpl_scatter_density/scatter_density_axes.py",
+    "Lib/site-packages/mpl_scatter_density/tests/__init__.py",
+    "Lib/site-packages/mpl_scatter_density/tests/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/mpl_scatter_density/tests/__pycache__/test_scatter_density_artist.cpython-36.pyc",
+    "Lib/site-packages/mpl_scatter_density/tests/__pycache__/test_scatter_density_axes.cpython-36.pyc",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_axes_basic.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_axes_projection.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_color.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_colorcode.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_colorcode_downres.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_default.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_downres.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_downres_False.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_downres_True.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_flipping_False-False.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_flipping_False-True.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_flipping_True-False.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_flipping_True-True.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_image_settings.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_manual_limits.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_multi_scatter.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_norm.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_origin.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_remove.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_scales_linear-linear.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_scales_linear-log.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_scales_log-linear.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_scales_log-log.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_axes_basic.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_axes_projection.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_color.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_colorcode.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_colorcode_downres.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_default.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_downres_False.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_downres_True.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_flipping_False-False.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_flipping_False-True.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_flipping_True-False.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_flipping_True-True.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_image_settings.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_manual_limits.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_multi_scatter.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_norm.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_origin.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_remove.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_scales_linear-linear.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_scales_linear-log.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_scales_log-linear.png",
+    "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_scales_log-log.png",
+    "Lib/site-packages/mpl_scatter_density/tests/test_scatter_density_artist.py",
+    "Lib/site-packages/mpl_scatter_density/tests/test_scatter_density_axes.py"
+  ],
+  "fn": "mpl-scatter-density-0.4-py36_0.tar.bz2",
+  "license": "BSD",
+  "license_family": "BSD",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\mpl-scatter-density-0.4-py36_0",
+    "type": 1
+  },
+  "md5": "9e46fb99a6d64ea4707e9e2bb8699098",
+  "name": "mpl-scatter-density",
+  "package_tarball_full_path": "C:\\Users\\danie\\Anaconda3\\pkgs\\mpl-scatter-density-0.4-py36_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density-0.4.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "sha256_in_prefix": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "size_in_bytes": 4
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density-0.4.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "f8c98aa2957e25631397dc88abf571b0c3b2e95cf5b37ef05467a93101488ab3",
+        "sha256_in_prefix": "f8c98aa2957e25631397dc88abf571b0c3b2e95cf5b37ef05467a93101488ab3",
+        "size_in_bytes": 12099
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density-0.4.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "1eafca28dad469e338f05072782f8f494ef48e5ca25350033fdfa934db3acf52",
+        "sha256_in_prefix": "1eafca28dad469e338f05072782f8f494ef48e5ca25350033fdfa934db3acf52",
+        "size_in_bytes": 7470
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density-0.4.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "d25d5b32914c0ffec3c7a13f3d41931bfde26941cf33adcc3c471f4da3c4bfb6",
+        "sha256_in_prefix": "d25d5b32914c0ffec3c7a13f3d41931bfde26941cf33adcc3c471f4da3c4bfb6",
+        "size_in_bytes": 98
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density-0.4.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "a37cdf998a866659179557abb253c3a4d54fec82ed25aa0abfc50c83aa59ae62",
+        "sha256_in_prefix": "a37cdf998a866659179557abb253c3a4d54fec82ed25aa0abfc50c83aa59ae62",
+        "size_in_bytes": 20
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "738e72b9f8b1f78d06bf4752ff59508f0f877e385ae6f5e486fce20243276c0c",
+        "sha256_in_prefix": "738e72b9f8b1f78d06bf4752ff59508f0f877e385ae6f5e486fce20243276c0c",
+        "size_in_bytes": 95
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "dc5a5757a81022e64bc91d7fee86e1fac8f7d20d155b9519ae3802692fd50e0d",
+        "sha256_in_prefix": "dc5a5757a81022e64bc91d7fee86e1fac8f7d20d155b9519ae3802692fd50e0d",
+        "size_in_bytes": 227
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/__pycache__/color.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "7462aae9897cdcb024a8198bc4c3f3e90fef8c34640b59609d15010151260991",
+        "sha256_in_prefix": "7462aae9897cdcb024a8198bc4c3f3e90fef8c34640b59609d15010151260991",
+        "size_in_bytes": 621
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/__pycache__/fixed_data_density_helper.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "ca70a096d4133bc0074329d2d29e4b5da3a5d280d85587d595829e49d7c0031b",
+        "sha256_in_prefix": "ca70a096d4133bc0074329d2d29e4b5da3a5d280d85587d595829e49d7c0031b",
+        "size_in_bytes": 3227
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/__pycache__/generic_density_artist.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "792ce5ba3412e5b92be03fe2e67bbcb72609dbcfe5d571653109cba4cef6174e",
+        "sha256_in_prefix": "792ce5ba3412e5b92be03fe2e67bbcb72609dbcfe5d571653109cba4cef6174e",
+        "size_in_bytes": 7199
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/__pycache__/scatter_density_artist.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "141d3edbf2300edc42542418e757efc371cf5b873715863250b384f519bedfe6",
+        "sha256_in_prefix": "141d3edbf2300edc42542418e757efc371cf5b873715863250b384f519bedfe6",
+        "size_in_bytes": 3870
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/__pycache__/scatter_density_axes.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "88d4999257d0d9a136988cb32e9a5075fc2bf60de4d422bb2cf681f3ca1e9f19",
+        "sha256_in_prefix": "88d4999257d0d9a136988cb32e9a5075fc2bf60de4d422bb2cf681f3ca1e9f19",
+        "size_in_bytes": 2428
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/color.py",
+        "path_type": "hardlink",
+        "sha256": "c4e78cfcbb5815030e2c97c357a7e9bd85cc5370e2bba65a71ae40f040b1e322",
+        "sha256_in_prefix": "c4e78cfcbb5815030e2c97c357a7e9bd85cc5370e2bba65a71ae40f040b1e322",
+        "size_in_bytes": 542
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/fixed_data_density_helper.py",
+        "path_type": "hardlink",
+        "sha256": "71b6480ae09e449f9ae138ee8169fcd0a18bf788f98fe838b51cea4bae3db566",
+        "sha256_in_prefix": "71b6480ae09e449f9ae138ee8169fcd0a18bf788f98fe838b51cea4bae3db566",
+        "size_in_bytes": 3894
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/generic_density_artist.py",
+        "path_type": "hardlink",
+        "sha256": "c9c69321ff20343de98e82f429351bd02bc15a48322c75834ae722f3fbea52c5",
+        "sha256_in_prefix": "c9c69321ff20343de98e82f429351bd02bc15a48322c75834ae722f3fbea52c5",
+        "size_in_bytes": 8651
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/scatter_density_artist.py",
+        "path_type": "hardlink",
+        "sha256": "af5ff9d7abfdb9b22b16ca2712619ebfa471bc6edd328afe573f3e43b6943dee",
+        "sha256_in_prefix": "af5ff9d7abfdb9b22b16ca2712619ebfa471bc6edd328afe573f3e43b6943dee",
+        "size_in_bytes": 3325
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/scatter_density_axes.py",
+        "path_type": "hardlink",
+        "sha256": "26c687b1a6dbe087f260e838976fef6ca19b7c6fe6b58985f5d77a532ddfd956",
+        "sha256_in_prefix": "26c687b1a6dbe087f260e838976fef6ca19b7c6fe6b58985f5d77a532ddfd956",
+        "size_in_bytes": 2171
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "a1f76fc24e4e009d4ec497f635903c53c37d327baf1517278dedf2cdd10f822b",
+        "sha256_in_prefix": "a1f76fc24e4e009d4ec497f635903c53c37d327baf1517278dedf2cdd10f822b",
+        "size_in_bytes": 503
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "c86aa3231d5647ede063cfde8ca437713c91505a7293d06e79116a7ab4fa351b",
+        "sha256_in_prefix": "c86aa3231d5647ede063cfde8ca437713c91505a7293d06e79116a7ab4fa351b",
+        "size_in_bytes": 493
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/__pycache__/test_scatter_density_artist.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "9532b159b878a97666e25ccf2c3300ba02c91c76d5cace32d99a43634d8aec2d",
+        "sha256_in_prefix": "9532b159b878a97666e25ccf2c3300ba02c91c76d5cace32d99a43634d8aec2d",
+        "size_in_bytes": 9158
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/__pycache__/test_scatter_density_axes.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "560a9864758c6cc54f9d060b1b41ab55dae5788d3f7ded2c5bf5afe4e577b734",
+        "sha256_in_prefix": "560a9864758c6cc54f9d060b1b41ab55dae5788d3f7ded2c5bf5afe4e577b734",
+        "size_in_bytes": 1904
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_axes_basic.png",
+        "path_type": "hardlink",
+        "sha256": "bf20fde85a74c5ede4adf91be965cb9d45e04f5dab0a410d11eaae90fc697fdd",
+        "sha256_in_prefix": "bf20fde85a74c5ede4adf91be965cb9d45e04f5dab0a410d11eaae90fc697fdd",
+        "size_in_bytes": 25401
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_axes_projection.png",
+        "path_type": "hardlink",
+        "sha256": "a0a24584406d1edec104d7335e5cd1d67c071d9cb6786c8f3008bbd93bca7a7f",
+        "sha256_in_prefix": "a0a24584406d1edec104d7335e5cd1d67c071d9cb6786c8f3008bbd93bca7a7f",
+        "size_in_bytes": 16100
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_color.png",
+        "path_type": "hardlink",
+        "sha256": "d0d3840d5e6389c1f2009125faf3c377119b0133dcf2889769bcad52d721a138",
+        "sha256_in_prefix": "d0d3840d5e6389c1f2009125faf3c377119b0133dcf2889769bcad52d721a138",
+        "size_in_bytes": 87378
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_colorcode.png",
+        "path_type": "hardlink",
+        "sha256": "aff66940fb6e4df1dfb298864366a40d0d6ac7ea7627c4b765033fc22ddb739b",
+        "sha256_in_prefix": "aff66940fb6e4df1dfb298864366a40d0d6ac7ea7627c4b765033fc22ddb739b",
+        "size_in_bytes": 44348
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_colorcode_downres.png",
+        "path_type": "hardlink",
+        "sha256": "1bc0c0118dea3234234463a9839568540edd083bab2e2feee1d971100f00bf3a",
+        "sha256_in_prefix": "1bc0c0118dea3234234463a9839568540edd083bab2e2feee1d971100f00bf3a",
+        "size_in_bytes": 33706
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_default.png",
+        "path_type": "hardlink",
+        "sha256": "afcdcb395a088583b2f1941aea7b52331038cf6a132f7d7d5addef6b99a4d45b",
+        "sha256_in_prefix": "afcdcb395a088583b2f1941aea7b52331038cf6a132f7d7d5addef6b99a4d45b",
+        "size_in_bytes": 169028
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_downres.png",
+        "path_type": "hardlink",
+        "sha256": "b37078bfb99403abf21b379be14f12a198ef32054e6246247f3dbbf48c96a74a",
+        "sha256_in_prefix": "b37078bfb99403abf21b379be14f12a198ef32054e6246247f3dbbf48c96a74a",
+        "size_in_bytes": 71886
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_downres_False.png",
+        "path_type": "hardlink",
+        "sha256": "71ff195918c17995116a47618358bc74d09fa75c1fa2f95e61303e31f761b017",
+        "sha256_in_prefix": "71ff195918c17995116a47618358bc74d09fa75c1fa2f95e61303e31f761b017",
+        "size_in_bytes": 33638
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_downres_True.png",
+        "path_type": "hardlink",
+        "sha256": "e428e01cf42caf9e082409cf941b3bc1e5090ed2c699e4a3cd6c6cf20dccdafc",
+        "sha256_in_prefix": "e428e01cf42caf9e082409cf941b3bc1e5090ed2c699e4a3cd6c6cf20dccdafc",
+        "size_in_bytes": 43721
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_flipping_False-False.png",
+        "path_type": "hardlink",
+        "sha256": "2f0a3cbfa0faba23b96d56e5c2fd8b15970032d659f539711e504feb671cfe78",
+        "sha256_in_prefix": "2f0a3cbfa0faba23b96d56e5c2fd8b15970032d659f539711e504feb671cfe78",
+        "size_in_bytes": 37678
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_flipping_False-True.png",
+        "path_type": "hardlink",
+        "sha256": "7233cbb42bdc7b32c16d334f5e932059ef0176bed5d9c0124208ab75851b9d51",
+        "sha256_in_prefix": "7233cbb42bdc7b32c16d334f5e932059ef0176bed5d9c0124208ab75851b9d51",
+        "size_in_bytes": 37402
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_flipping_True-False.png",
+        "path_type": "hardlink",
+        "sha256": "15150e602a7c2fc4000f69a6e74c49267cc46dde3e27b8bf0de713b0442861aa",
+        "sha256_in_prefix": "15150e602a7c2fc4000f69a6e74c49267cc46dde3e27b8bf0de713b0442861aa",
+        "size_in_bytes": 37703
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_flipping_True-True.png",
+        "path_type": "hardlink",
+        "sha256": "847114a9b326bdd37ac699795e5efdd1b58e22253a9a9a64430164d32af16e57",
+        "sha256_in_prefix": "847114a9b326bdd37ac699795e5efdd1b58e22253a9a9a64430164d32af16e57",
+        "size_in_bytes": 37299
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_image_settings.png",
+        "path_type": "hardlink",
+        "sha256": "d505276d29161a4ef703d1070a4077cca7cea5dcedf3ef23ce2e81138b4f834c",
+        "sha256_in_prefix": "d505276d29161a4ef703d1070a4077cca7cea5dcedf3ef23ce2e81138b4f834c",
+        "size_in_bytes": 94376
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_manual_limits.png",
+        "path_type": "hardlink",
+        "sha256": "a2cd2f0a2398bdd3cc2a33d4e5a9721cc98fdff49831d58e607db8efed65eba5",
+        "sha256_in_prefix": "a2cd2f0a2398bdd3cc2a33d4e5a9721cc98fdff49831d58e607db8efed65eba5",
+        "size_in_bytes": 52973
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_multi_scatter.png",
+        "path_type": "hardlink",
+        "sha256": "522853b8b2cb3f384dbf01ed34684712183f1fdeb4334ec496e613d3449ae7ae",
+        "sha256_in_prefix": "522853b8b2cb3f384dbf01ed34684712183f1fdeb4334ec496e613d3449ae7ae",
+        "size_in_bytes": 20452
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_norm.png",
+        "path_type": "hardlink",
+        "sha256": "b2e833f1669c05f1865bf3b23678c0896c820511180ea3036dc8f4c2edc264a1",
+        "sha256_in_prefix": "b2e833f1669c05f1865bf3b23678c0896c820511180ea3036dc8f4c2edc264a1",
+        "size_in_bytes": 82206
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_origin.png",
+        "path_type": "hardlink",
+        "sha256": "c55d335d869e8d3ac45e5aaf942a1efa36fb4d5e283a7ff3560489d1eec40d00",
+        "sha256_in_prefix": "c55d335d869e8d3ac45e5aaf942a1efa36fb4d5e283a7ff3560489d1eec40d00",
+        "size_in_bytes": 21022
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_remove.png",
+        "path_type": "hardlink",
+        "sha256": "2e6342552ed863be9cca6311436127fa599f7d75b51e590e1c4fa029ce34daa6",
+        "sha256_in_prefix": "2e6342552ed863be9cca6311436127fa599f7d75b51e590e1c4fa029ce34daa6",
+        "size_in_bytes": 7686
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_scales_linear-linear.png",
+        "path_type": "hardlink",
+        "sha256": "6e259dda30e780e96beb58f4707c3afdea4a6bf6853ee7f8498c39f7084b5b40",
+        "sha256_in_prefix": "6e259dda30e780e96beb58f4707c3afdea4a6bf6853ee7f8498c39f7084b5b40",
+        "size_in_bytes": 13868
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_scales_linear-log.png",
+        "path_type": "hardlink",
+        "sha256": "b138dfabae11e13af60ff2e9a79fcea311fcd7859e12fa91c6705befaf75861b",
+        "sha256_in_prefix": "b138dfabae11e13af60ff2e9a79fcea311fcd7859e12fa91c6705befaf75861b",
+        "size_in_bytes": 23576
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_scales_log-linear.png",
+        "path_type": "hardlink",
+        "sha256": "d93bdb64229488d00bd98fffc06077caa31b77484845fea5e6440e9f20ebd15b",
+        "sha256_in_prefix": "d93bdb64229488d00bd98fffc06077caa31b77484845fea5e6440e9f20ebd15b",
+        "size_in_bytes": 27780
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/1.5.x/test_scales_log-log.png",
+        "path_type": "hardlink",
+        "sha256": "d79a1371dc02582724eb298b5060483839bad45586bca4f9293edc701d925484",
+        "sha256_in_prefix": "d79a1371dc02582724eb298b5060483839bad45586bca4f9293edc701d925484",
+        "size_in_bytes": 60287
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_axes_basic.png",
+        "path_type": "hardlink",
+        "sha256": "f2efaa81cf71902d6d17bcee50f1aa8c747a234a003f0725fd6e04d8af2bcd2c",
+        "sha256_in_prefix": "f2efaa81cf71902d6d17bcee50f1aa8c747a234a003f0725fd6e04d8af2bcd2c",
+        "size_in_bytes": 20408
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_axes_projection.png",
+        "path_type": "hardlink",
+        "sha256": "3f376aecb0a5033d361444f6b12485d53f984c63843a88d76e95aca8fe6f179d",
+        "sha256_in_prefix": "3f376aecb0a5033d361444f6b12485d53f984c63843a88d76e95aca8fe6f179d",
+        "size_in_bytes": 12938
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_color.png",
+        "path_type": "hardlink",
+        "sha256": "da5cc630ad4fca291c8040cfb2a963232ada560c8d4a266eb7a654d1b1ca26cd",
+        "sha256_in_prefix": "da5cc630ad4fca291c8040cfb2a963232ada560c8d4a266eb7a654d1b1ca26cd",
+        "size_in_bytes": 58250
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_colorcode.png",
+        "path_type": "hardlink",
+        "sha256": "848de466037391c11efe48d65f36dda95eaca7f27d4b7127f614d8e7f147e50f",
+        "sha256_in_prefix": "848de466037391c11efe48d65f36dda95eaca7f27d4b7127f614d8e7f147e50f",
+        "size_in_bytes": 21605
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_colorcode_downres.png",
+        "path_type": "hardlink",
+        "sha256": "46f283b5d34a2d3311ce31fc4f20ea9222957ac3d00d8696bb2c10eabfd10ffa",
+        "sha256_in_prefix": "46f283b5d34a2d3311ce31fc4f20ea9222957ac3d00d8696bb2c10eabfd10ffa",
+        "size_in_bytes": 5180
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_default.png",
+        "path_type": "hardlink",
+        "sha256": "d732e6fe1de01e5e89112eff523c661208ae67bc6506853d907bc9364169698d",
+        "sha256_in_prefix": "d732e6fe1de01e5e89112eff523c661208ae67bc6506853d907bc9364169698d",
+        "size_in_bytes": 87433
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_downres_False.png",
+        "path_type": "hardlink",
+        "sha256": "c250c6b9f3486b96dfd5c4ab8b438148470bce2aa60f658ee362459490ff61b3",
+        "sha256_in_prefix": "c250c6b9f3486b96dfd5c4ab8b438148470bce2aa60f658ee362459490ff61b3",
+        "size_in_bytes": 6544
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_downres_True.png",
+        "path_type": "hardlink",
+        "sha256": "ab2315c571d897f9340770ecf9168dcd10f67f9e66bfc079120850fa0a67820d",
+        "sha256_in_prefix": "ab2315c571d897f9340770ecf9168dcd10f67f9e66bfc079120850fa0a67820d",
+        "size_in_bytes": 4986
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_flipping_False-False.png",
+        "path_type": "hardlink",
+        "sha256": "9036c39918978fc00ae46b80cd2ec13fe3ce040f492965c2084a6252250f76d4",
+        "sha256_in_prefix": "9036c39918978fc00ae46b80cd2ec13fe3ce040f492965c2084a6252250f76d4",
+        "size_in_bytes": 27701
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_flipping_False-True.png",
+        "path_type": "hardlink",
+        "sha256": "ace077878aceb7e1e686e89d5178104bf7a3767c041dc14e0588d9b736797763",
+        "sha256_in_prefix": "ace077878aceb7e1e686e89d5178104bf7a3767c041dc14e0588d9b736797763",
+        "size_in_bytes": 27667
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_flipping_True-False.png",
+        "path_type": "hardlink",
+        "sha256": "bb9c0b2944aff07ae98549301a7ab9f3a4f4137b855163d189cc346e1cb96c3b",
+        "sha256_in_prefix": "bb9c0b2944aff07ae98549301a7ab9f3a4f4137b855163d189cc346e1cb96c3b",
+        "size_in_bytes": 27779
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_flipping_True-True.png",
+        "path_type": "hardlink",
+        "sha256": "f7447fb99486f35eccd3fc2ac9dd92576163e9aed49957ef3844402c673e4438",
+        "sha256_in_prefix": "f7447fb99486f35eccd3fc2ac9dd92576163e9aed49957ef3844402c673e4438",
+        "size_in_bytes": 27696
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_image_settings.png",
+        "path_type": "hardlink",
+        "sha256": "04fb529a158cb589e8ad0900a73e6d7ae0088693a473db32ddd2c5ab859c4b95",
+        "sha256_in_prefix": "04fb529a158cb589e8ad0900a73e6d7ae0088693a473db32ddd2c5ab859c4b95",
+        "size_in_bytes": 91240
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_manual_limits.png",
+        "path_type": "hardlink",
+        "sha256": "362706cd24bda8d0e2f0736d4579d9d72ffd3626ac14eb061a2ec552eb1ecd9c",
+        "sha256_in_prefix": "362706cd24bda8d0e2f0736d4579d9d72ffd3626ac14eb061a2ec552eb1ecd9c",
+        "size_in_bytes": 34862
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_multi_scatter.png",
+        "path_type": "hardlink",
+        "sha256": "324b316e6dde7acc28f2146f795e931ade9c8ae94974c3ac8a65c7c266f9e28c",
+        "sha256_in_prefix": "324b316e6dde7acc28f2146f795e931ade9c8ae94974c3ac8a65c7c266f9e28c",
+        "size_in_bytes": 17193
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_norm.png",
+        "path_type": "hardlink",
+        "sha256": "316549aeb92b3f230a7f748a4141b09146bfbe0ddca34f6d30cc02daec4f5374",
+        "sha256_in_prefix": "316549aeb92b3f230a7f748a4141b09146bfbe0ddca34f6d30cc02daec4f5374",
+        "size_in_bytes": 50567
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_origin.png",
+        "path_type": "hardlink",
+        "sha256": "0bc51e26c1f3f61c16ef16b266548421a80c42c5391e17053160c97287486937",
+        "sha256_in_prefix": "0bc51e26c1f3f61c16ef16b266548421a80c42c5391e17053160c97287486937",
+        "size_in_bytes": 15917
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_remove.png",
+        "path_type": "hardlink",
+        "sha256": "56992ecb8fc59946951e39a150d65f9ad2d54c5ad31be4dc36ebce7d55b7f084",
+        "sha256_in_prefix": "56992ecb8fc59946951e39a150d65f9ad2d54c5ad31be4dc36ebce7d55b7f084",
+        "size_in_bytes": 6125
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_scales_linear-linear.png",
+        "path_type": "hardlink",
+        "sha256": "21fb79f613e9c8be82fcd83acc4b5a257b6acd9fea745b77db9c83ca5dd8fdc1",
+        "sha256_in_prefix": "21fb79f613e9c8be82fcd83acc4b5a257b6acd9fea745b77db9c83ca5dd8fdc1",
+        "size_in_bytes": 11122
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_scales_linear-log.png",
+        "path_type": "hardlink",
+        "sha256": "39343b72260289125c8a33110c9197020b08920f416b53aea18b87c4c1f6b2c6",
+        "sha256_in_prefix": "39343b72260289125c8a33110c9197020b08920f416b53aea18b87c4c1f6b2c6",
+        "size_in_bytes": 19095
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_scales_log-linear.png",
+        "path_type": "hardlink",
+        "sha256": "be0ec1d6d05e8eee9baeb186de95ad6f005e5add26585bcb93846967582e6edc",
+        "sha256_in_prefix": "be0ec1d6d05e8eee9baeb186de95ad6f005e5add26585bcb93846967582e6edc",
+        "size_in_bytes": 21527
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/baseline/2.0.x/test_scales_log-log.png",
+        "path_type": "hardlink",
+        "sha256": "eb23a5c169167777b541ef42368f599e25a3e92ad2a93effa70e95a580e1f548",
+        "sha256_in_prefix": "eb23a5c169167777b541ef42368f599e25a3e92ad2a93effa70e95a580e1f548",
+        "size_in_bytes": 47176
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/test_scatter_density_artist.py",
+        "path_type": "hardlink",
+        "sha256": "9ebd884988f2dd996f01d4f99f40f83f7873f8bfac662768b5c01e51b8dc2be7",
+        "sha256_in_prefix": "9ebd884988f2dd996f01d4f99f40f83f7873f8bfac662768b5c01e51b8dc2be7",
+        "size_in_bytes": 10225
+      },
+      {
+        "_path": "Lib/site-packages/mpl_scatter_density/tests/test_scatter_density_axes.py",
+        "path_type": "hardlink",
+        "sha256": "2cff782c3731e9fb9d34aa92f0cc1b0b58d53c33751b00abbedee457eda3be53",
+        "sha256_in_prefix": "2cff782c3731e9fb9d34aa92f0cc1b0b58d53c33751b00abbedee457eda3be53",
+        "size_in_bytes": 1219
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "win32",
+  "requested_spec": "None",
+  "size": 1739092,
+  "subdir": "win-64",
+  "timestamp": 1536255904672,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/mpl-scatter-density-0.4-py36_0.tar.bz2",
+  "version": "0.4"
+}

@@ -1,0 +1,31 @@
+{
+  "arch": "x86_64",
+  "build": "py36h12c3424_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.6,<3.7.0a0",
+    "vc 14.*"
+  ],
+  "files": [
+    "Lib/site-packages/kiwisolver-1.0.1-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/kiwisolver-1.0.1-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/kiwisolver-1.0.1-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/kiwisolver-1.0.1-py3.6.egg-info/requires.txt",
+    "Lib/site-packages/kiwisolver-1.0.1-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/kiwisolver.cp36-win_amd64.pyd"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "BSD 3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\kiwisolver-1.0.1-py36h12c3424_0",
+    "type": "hard-link"
+  },
+  "md5": "15080166a273de597f8937b691a80db2",
+  "name": "kiwisolver",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1511806719547,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/kiwisolver-1.0.1-py36h12c3424_0.tar.bz2",
+  "version": "1.0.1"
+}

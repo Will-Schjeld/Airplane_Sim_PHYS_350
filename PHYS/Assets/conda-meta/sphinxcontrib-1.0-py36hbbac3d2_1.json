@@ -1,0 +1,25 @@
+{
+  "arch": "x86_64",
+  "build": "py36hbbac3d2_1",
+  "build_number": 1,
+  "depends": [
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/sphinxcontrib/__init__.py",
+    "Lib/site-packages/sphinxcontrib/__pycache__/__init__.cpython-36.pyc"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "BSD",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\sphinxcontrib-1.0-py36hbbac3d2_1",
+    "type": "hard-link"
+  },
+  "md5": "eb6315e09e2218c60ff4d72485471565",
+  "name": "sphinxcontrib",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1506038706548,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/sphinxcontrib-1.0-py36hbbac3d2_1.tar.bz2",
+  "version": "1.0"
+}

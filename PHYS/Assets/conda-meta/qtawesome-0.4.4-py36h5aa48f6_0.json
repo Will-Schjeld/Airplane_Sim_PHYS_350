@@ -1,0 +1,45 @@
+{
+  "arch": "x86_64",
+  "build": "py36h5aa48f6_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.6,<3.7.0a0",
+    "qtpy",
+    "six"
+  ],
+  "files": [
+    "Lib/site-packages/QtAwesome-0.4.4-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/QtAwesome-0.4.4-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/QtAwesome-0.4.4-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/QtAwesome-0.4.4-py3.6.egg-info/requires.txt",
+    "Lib/site-packages/QtAwesome-0.4.4-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/qtawesome/__init__.py",
+    "Lib/site-packages/qtawesome/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/qtawesome/__pycache__/_version.cpython-36.pyc",
+    "Lib/site-packages/qtawesome/__pycache__/animation.cpython-36.pyc",
+    "Lib/site-packages/qtawesome/__pycache__/iconic_font.cpython-36.pyc",
+    "Lib/site-packages/qtawesome/_version.py",
+    "Lib/site-packages/qtawesome/animation.py",
+    "Lib/site-packages/qtawesome/fonts/elusiveicons-webfont-charmap.json",
+    "Lib/site-packages/qtawesome/fonts/elusiveicons-webfont.ttf",
+    "Lib/site-packages/qtawesome/fonts/fontawesome-webfont-charmap.json",
+    "Lib/site-packages/qtawesome/fonts/fontawesome-webfont.ttf",
+    "Lib/site-packages/qtawesome/iconic_font.py",
+    "Lib/site-packages/qtawesome/tests/__pycache__/test_qtawesome.cpython-35-PYTEST.pyc",
+    "Lib/site-packages/qtawesome/tests/__pycache__/test_qtawesome.cpython-36.pyc",
+    "Lib/site-packages/qtawesome/tests/test_qtawesome.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "MIT",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\qtawesome-0.4.4-py36h5aa48f6_0",
+    "type": "hard-link"
+  },
+  "md5": "112cac782558fd4f1ae00f108853a32e",
+  "name": "qtawesome",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1506037664001,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/qtawesome-0.4.4-py36h5aa48f6_0.tar.bz2",
+  "version": "0.4.4"
+}

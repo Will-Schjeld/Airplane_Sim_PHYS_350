@@ -1,0 +1,48 @@
+{
+  "arch": "x86_64",
+  "build": "py36h2d8e73e_0",
+  "build_number": 0,
+  "depends": [
+    "heapdict",
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/zict-0.1.3-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/zict-0.1.3-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/zict-0.1.3-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/zict-0.1.3-py3.6.egg-info/not-zip-safe",
+    "Lib/site-packages/zict-0.1.3-py3.6.egg-info/requires.txt",
+    "Lib/site-packages/zict-0.1.3-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/zict/__init__.py",
+    "Lib/site-packages/zict/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/zict/__pycache__/buffer.cpython-36.pyc",
+    "Lib/site-packages/zict/__pycache__/common.cpython-36.pyc",
+    "Lib/site-packages/zict/__pycache__/file.cpython-36.pyc",
+    "Lib/site-packages/zict/__pycache__/func.cpython-36.pyc",
+    "Lib/site-packages/zict/__pycache__/lmdb.cpython-36.pyc",
+    "Lib/site-packages/zict/__pycache__/lru.cpython-36.pyc",
+    "Lib/site-packages/zict/__pycache__/sieve.cpython-36.pyc",
+    "Lib/site-packages/zict/__pycache__/zip.cpython-36.pyc",
+    "Lib/site-packages/zict/buffer.py",
+    "Lib/site-packages/zict/common.py",
+    "Lib/site-packages/zict/file.py",
+    "Lib/site-packages/zict/func.py",
+    "Lib/site-packages/zict/lmdb.py",
+    "Lib/site-packages/zict/lru.py",
+    "Lib/site-packages/zict/sieve.py",
+    "Lib/site-packages/zict/zip.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "BSD 3-Clause",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\zict-0.1.3-py36h2d8e73e_0",
+    "type": "hard-link"
+  },
+  "md5": "fb061a3d87a0f419f24c00fdd2c7a978",
+  "name": "zict",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1506623895412,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/zict-0.1.3-py36h2d8e73e_0.tar.bz2",
+  "version": "0.1.3"
+}

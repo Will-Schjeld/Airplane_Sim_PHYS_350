@@ -1,0 +1,54 @@
+{
+  "arch": "x86_64",
+  "build": "py36hcd2f87e_0",
+  "build_number": 0,
+  "depends": [
+    "mkl >=2018.0.2",
+    "numpy >=1.11.3,<2.0a0",
+    "python >=3.6,<3.7.0a0",
+    "vc 14.*"
+  ],
+  "files": [
+    "Lib/site-packages/numexpr-2.6.5-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/numexpr-2.6.5-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/numexpr-2.6.5-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/numexpr-2.6.5-py3.6.egg-info/not-zip-safe",
+    "Lib/site-packages/numexpr-2.6.5-py3.6.egg-info/requires.txt",
+    "Lib/site-packages/numexpr-2.6.5-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/numexpr/__config__.py",
+    "Lib/site-packages/numexpr/__init__.py",
+    "Lib/site-packages/numexpr/__pycache__/__config__.cpython-36.pyc",
+    "Lib/site-packages/numexpr/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/numexpr/__pycache__/cpuinfo.cpython-36.pyc",
+    "Lib/site-packages/numexpr/__pycache__/expressions.cpython-36.pyc",
+    "Lib/site-packages/numexpr/__pycache__/necompiler.cpython-36.pyc",
+    "Lib/site-packages/numexpr/__pycache__/utils.cpython-36.pyc",
+    "Lib/site-packages/numexpr/__pycache__/version.cpython-36.pyc",
+    "Lib/site-packages/numexpr/cpuinfo.py",
+    "Lib/site-packages/numexpr/expressions.py",
+    "Lib/site-packages/numexpr/interpreter.cp36-win_amd64.pyd",
+    "Lib/site-packages/numexpr/necompiler.py",
+    "Lib/site-packages/numexpr/tests/__init__.py",
+    "Lib/site-packages/numexpr/tests/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/numexpr/tests/__pycache__/test_numexpr.cpython-36.pyc",
+    "Lib/site-packages/numexpr/tests/test_numexpr.py",
+    "Lib/site-packages/numexpr/utils.py",
+    "Lib/site-packages/numexpr/version.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "MIT",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\numexpr-2.6.5-py36hcd2f87e_0",
+    "type": "hard-link"
+  },
+  "md5": "6a8f4ac60126c5c596001c8fdeca2e84",
+  "name": "numexpr",
+  "platform": "win",
+  "requires_features": {
+    "blas": "mkl"
+  },
+  "subdir": "win-64",
+  "timestamp": 1525814020369,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/numexpr-2.6.5-py36hcd2f87e_0.tar.bz2",
+  "version": "2.6.5"
+}

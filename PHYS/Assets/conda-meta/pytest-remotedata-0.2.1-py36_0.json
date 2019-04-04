@@ -1,0 +1,39 @@
+{
+  "arch": "x86_64",
+  "build": "py36_0",
+  "build_number": 0,
+  "depends": [
+    "pytest >=3.1",
+    "python >=3.6,<3.7.0a0",
+    "six"
+  ],
+  "files": [
+    "Lib/site-packages/pytest_remotedata-0.2.1-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/pytest_remotedata-0.2.1-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/pytest_remotedata-0.2.1-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/pytest_remotedata-0.2.1-py3.6.egg-info/entry_points.txt",
+    "Lib/site-packages/pytest_remotedata-0.2.1-py3.6.egg-info/installed-files.txt",
+    "Lib/site-packages/pytest_remotedata-0.2.1-py3.6.egg-info/not-zip-safe",
+    "Lib/site-packages/pytest_remotedata-0.2.1-py3.6.egg-info/requires.txt",
+    "Lib/site-packages/pytest_remotedata-0.2.1-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/pytest_remotedata/__init__.py",
+    "Lib/site-packages/pytest_remotedata/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/pytest_remotedata/__pycache__/disable_internet.cpython-36.pyc",
+    "Lib/site-packages/pytest_remotedata/__pycache__/plugin.cpython-36.pyc",
+    "Lib/site-packages/pytest_remotedata/disable_internet.py",
+    "Lib/site-packages/pytest_remotedata/plugin.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "BSD",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\pytest-remotedata-0.2.1-py36_0",
+    "type": "hard-link"
+  },
+  "md5": "31de77ae8c42f383ee66bc89ea98f7a6",
+  "name": "pytest-remotedata",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1524578889205,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/pytest-remotedata-0.2.1-py36_0.tar.bz2",
+  "version": "0.2.1"
+}

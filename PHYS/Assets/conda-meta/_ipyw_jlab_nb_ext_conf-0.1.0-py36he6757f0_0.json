@@ -1,0 +1,28 @@
+{
+  "arch": "x86_64",
+  "build": "py36he6757f0_0",
+  "build_number": 0,
+  "depends": [
+    "ipywidgets",
+    "jupyterlab",
+    "python >=3.6,<3.7.0a0",
+    "widgetsnbextension"
+  ],
+  "files": [
+    "etc/jupyter/jupyter_notebook_config.json",
+    "etc/jupyter/nbconfig/notebook.json"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "BSD",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\_ipyw_jlab_nb_ext_conf-0.1.0-py36he6757f0_0",
+    "type": "hard-link"
+  },
+  "md5": "e5831119d490390d1d3fd9ff05a7b8d4",
+  "name": "_ipyw_jlab_nb_ext_conf",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1505856790810,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/_ipyw_jlab_nb_ext_conf-0.1.0-py36he6757f0_0.tar.bz2",
+  "version": "0.1.0"
+}

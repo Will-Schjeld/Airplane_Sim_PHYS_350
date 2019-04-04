@@ -1,0 +1,48 @@
+{
+  "arch": "x86_64",
+  "build": "py36_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/attr/__init__.py",
+    "Lib/site-packages/attr/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/attr/__pycache__/_compat.cpython-36.pyc",
+    "Lib/site-packages/attr/__pycache__/_config.cpython-36.pyc",
+    "Lib/site-packages/attr/__pycache__/_funcs.cpython-36.pyc",
+    "Lib/site-packages/attr/__pycache__/_make.cpython-36.pyc",
+    "Lib/site-packages/attr/__pycache__/converters.cpython-36.pyc",
+    "Lib/site-packages/attr/__pycache__/exceptions.cpython-36.pyc",
+    "Lib/site-packages/attr/__pycache__/filters.cpython-36.pyc",
+    "Lib/site-packages/attr/__pycache__/validators.cpython-36.pyc",
+    "Lib/site-packages/attr/_compat.py",
+    "Lib/site-packages/attr/_config.py",
+    "Lib/site-packages/attr/_funcs.py",
+    "Lib/site-packages/attr/_make.py",
+    "Lib/site-packages/attr/converters.py",
+    "Lib/site-packages/attr/exceptions.py",
+    "Lib/site-packages/attr/filters.py",
+    "Lib/site-packages/attr/validators.py",
+    "Lib/site-packages/attrs-18.1.0-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/attrs-18.1.0-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/attrs-18.1.0-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/attrs-18.1.0-py3.6.egg-info/not-zip-safe",
+    "Lib/site-packages/attrs-18.1.0-py3.6.egg-info/requires.txt",
+    "Lib/site-packages/attrs-18.1.0-py3.6.egg-info/top_level.txt"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\attrs-18.1.0-py36_0",
+    "type": "hard-link"
+  },
+  "md5": "f8fef101cd9690288a8f18c546933207",
+  "name": "attrs",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1525810896672,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/attrs-18.1.0-py36_0.tar.bz2",
+  "version": "18.1.0"
+}

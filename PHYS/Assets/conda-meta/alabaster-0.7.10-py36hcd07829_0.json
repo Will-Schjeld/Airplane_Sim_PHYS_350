@@ -1,0 +1,41 @@
+{
+  "arch": "x86_64",
+  "build": "py36hcd07829_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/alabaster-0.7.10-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/alabaster-0.7.10-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/alabaster-0.7.10-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/alabaster-0.7.10-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/alabaster/__init__.py",
+    "Lib/site-packages/alabaster/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/alabaster/__pycache__/_version.cpython-36.pyc",
+    "Lib/site-packages/alabaster/__pycache__/support.cpython-36.pyc",
+    "Lib/site-packages/alabaster/_version.py",
+    "Lib/site-packages/alabaster/about.html",
+    "Lib/site-packages/alabaster/donate.html",
+    "Lib/site-packages/alabaster/layout.html",
+    "Lib/site-packages/alabaster/navigation.html",
+    "Lib/site-packages/alabaster/relations.html",
+    "Lib/site-packages/alabaster/static/alabaster.css_t",
+    "Lib/site-packages/alabaster/static/custom.css",
+    "Lib/site-packages/alabaster/support.py",
+    "Lib/site-packages/alabaster/theme.conf"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "BSD 3-Clause",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\alabaster-0.7.10-py36hcd07829_0",
+    "type": "hard-link"
+  },
+  "md5": "3ab62141a88274f334877b0e156ab321",
+  "name": "alabaster",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1505856869685,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/alabaster-0.7.10-py36hcd07829_0.tar.bz2",
+  "version": "0.7.10"
+}

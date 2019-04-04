@@ -1,0 +1,33 @@
+{
+  "arch": "x86_64",
+  "build": "py36hfa6e2cd_1",
+  "build_number": 1,
+  "depends": [
+    "python >=3.6,<3.7.0a0",
+    "vc 14.*"
+  ],
+  "files": [
+    "Lib/site-packages/__pycache__/mistune.cpython-36.pyc",
+    "Lib/site-packages/mistune-0.8.3-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/mistune-0.8.3-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/mistune-0.8.3-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/mistune-0.8.3-py3.6.egg-info/not-zip-safe",
+    "Lib/site-packages/mistune-0.8.3-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/mistune.cp36-win_amd64.pyd",
+    "Lib/site-packages/mistune.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "BSD 3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\mistune-0.8.3-py36hfa6e2cd_1",
+    "type": "hard-link"
+  },
+  "md5": "584745493fe10050aa84cb7fd43e2d4e",
+  "name": "mistune",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1524516713566,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/mistune-0.8.3-py36hfa6e2cd_1.tar.bz2",
+  "version": "0.8.3"
+}

@@ -1,0 +1,40 @@
+{
+  "arch": "x86_64",
+  "build": "py36h029ae33_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/colorama-0.3.9-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/colorama-0.3.9-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/colorama-0.3.9-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/colorama-0.3.9-py3.6.egg-info/pbr.json",
+    "Lib/site-packages/colorama-0.3.9-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/colorama/__init__.py",
+    "Lib/site-packages/colorama/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/colorama/__pycache__/ansi.cpython-36.pyc",
+    "Lib/site-packages/colorama/__pycache__/ansitowin32.cpython-36.pyc",
+    "Lib/site-packages/colorama/__pycache__/initialise.cpython-36.pyc",
+    "Lib/site-packages/colorama/__pycache__/win32.cpython-36.pyc",
+    "Lib/site-packages/colorama/__pycache__/winterm.cpython-36.pyc",
+    "Lib/site-packages/colorama/ansi.py",
+    "Lib/site-packages/colorama/ansitowin32.py",
+    "Lib/site-packages/colorama/initialise.py",
+    "Lib/site-packages/colorama/win32.py",
+    "Lib/site-packages/colorama/winterm.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "BSD 3-Clause",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\colorama-0.3.9-py36h029ae33_0",
+    "type": "hard-link"
+  },
+  "md5": "490903d57db6ec76541aa78b0cd5e073",
+  "name": "colorama",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1505849932299,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/colorama-0.3.9-py36h029ae33_0.tar.bz2",
+  "version": "0.3.9"
+}

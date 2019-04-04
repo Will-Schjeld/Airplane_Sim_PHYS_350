@@ -1,0 +1,33 @@
+{
+  "arch": "x86_64",
+  "build": "py36_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.6,<3.7.0a0",
+    "win_inet_pton"
+  ],
+  "files": [
+    "Lib/site-packages/PySocks-1.6.8-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/PySocks-1.6.8-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/PySocks-1.6.8-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/PySocks-1.6.8-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/__pycache__/socks.cpython-36.pyc",
+    "Lib/site-packages/__pycache__/sockshandler.cpython-36.pyc",
+    "Lib/site-packages/socks.py",
+    "Lib/site-packages/sockshandler.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "BSD 3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\pysocks-1.6.8-py36_0",
+    "type": "hard-link"
+  },
+  "md5": "1d4d4d775522356933daeb0a9fa85ebc",
+  "name": "pysocks",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1519749967482,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/pysocks-1.6.8-py36_0.tar.bz2",
+  "version": "1.6.8"
+}

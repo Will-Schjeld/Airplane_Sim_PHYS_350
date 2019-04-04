@@ -1,0 +1,35 @@
+{
+  "arch": "x86_64",
+  "build": "py36_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/sortedcontainers-1.5.10-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/sortedcontainers-1.5.10-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/sortedcontainers-1.5.10-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/sortedcontainers-1.5.10-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/sortedcontainers/__init__.py",
+    "Lib/site-packages/sortedcontainers/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/sortedcontainers/__pycache__/sorteddict.cpython-36.pyc",
+    "Lib/site-packages/sortedcontainers/__pycache__/sortedlist.cpython-36.pyc",
+    "Lib/site-packages/sortedcontainers/__pycache__/sortedset.cpython-36.pyc",
+    "Lib/site-packages/sortedcontainers/sorteddict.py",
+    "Lib/site-packages/sortedcontainers/sortedlist.py",
+    "Lib/site-packages/sortedcontainers/sortedset.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "Apache 2.0",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\sortedcontainers-1.5.10-py36_0",
+    "type": "hard-link"
+  },
+  "md5": "097538a9daffd717702dd3aee359026a",
+  "name": "sortedcontainers",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1524496796663,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/sortedcontainers-1.5.10-py36_0.tar.bz2",
+  "version": "1.5.10"
+}

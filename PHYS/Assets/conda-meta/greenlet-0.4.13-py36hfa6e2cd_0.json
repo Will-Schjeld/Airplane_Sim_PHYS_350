@@ -1,0 +1,28 @@
+{
+  "arch": "x86_64",
+  "build": "py36hfa6e2cd_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.6,<3.7.0a0",
+    "vc 14.*"
+  ],
+  "files": [
+    "Lib/site-packages/greenlet-0.4.13-py3.6.egg-info",
+    "Lib/site-packages/greenlet.cp36-win_amd64.pyd",
+    "include/greenlet/greenlet.h"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\greenlet-0.4.13-py36hfa6e2cd_0",
+    "type": "hard-link"
+  },
+  "md5": "de087c76569b284346bf0d22e0cefaa1",
+  "name": "greenlet",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1519170233761,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/greenlet-0.4.13-py36hfa6e2cd_0.tar.bz2",
+  "version": "0.4.13"
+}

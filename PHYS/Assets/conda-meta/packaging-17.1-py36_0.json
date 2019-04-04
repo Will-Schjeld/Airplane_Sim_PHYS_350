@@ -1,0 +1,49 @@
+{
+  "arch": "x86_64",
+  "build": "py36_0",
+  "build_number": 0,
+  "depends": [
+    "pyparsing",
+    "python >=3.6,<3.7.0a0",
+    "six"
+  ],
+  "files": [
+    "Lib/site-packages/packaging-17.1-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/packaging-17.1-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/packaging-17.1-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/packaging-17.1-py3.6.egg-info/installed-files.txt",
+    "Lib/site-packages/packaging-17.1-py3.6.egg-info/requires.txt",
+    "Lib/site-packages/packaging-17.1-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/packaging/__about__.py",
+    "Lib/site-packages/packaging/__init__.py",
+    "Lib/site-packages/packaging/__pycache__/__about__.cpython-36.pyc",
+    "Lib/site-packages/packaging/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/packaging/__pycache__/_compat.cpython-36.pyc",
+    "Lib/site-packages/packaging/__pycache__/_structures.cpython-36.pyc",
+    "Lib/site-packages/packaging/__pycache__/markers.cpython-36.pyc",
+    "Lib/site-packages/packaging/__pycache__/requirements.cpython-36.pyc",
+    "Lib/site-packages/packaging/__pycache__/specifiers.cpython-36.pyc",
+    "Lib/site-packages/packaging/__pycache__/utils.cpython-36.pyc",
+    "Lib/site-packages/packaging/__pycache__/version.cpython-36.pyc",
+    "Lib/site-packages/packaging/_compat.py",
+    "Lib/site-packages/packaging/_structures.py",
+    "Lib/site-packages/packaging/markers.py",
+    "Lib/site-packages/packaging/requirements.py",
+    "Lib/site-packages/packaging/specifiers.py",
+    "Lib/site-packages/packaging/utils.py",
+    "Lib/site-packages/packaging/version.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "Apache 2.0 or BSD 2-Clause",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\packaging-17.1-py36_0",
+    "type": "hard-link"
+  },
+  "md5": "aeb380e8fda5a5ddfbe08ba16e0a4bc5",
+  "name": "packaging",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1520367638081,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/packaging-17.1-py36_0.tar.bz2",
+  "version": "17.1"
+}

@@ -1,0 +1,20 @@
+{
+  "arch": "x86_64",
+  "build": "h36134e3_1",
+  "build_number": 1,
+  "depends": [],
+  "files": [],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "BSD 3-Clause",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\conda-env-2.6.0-h36134e3_1",
+    "type": "hard-link"
+  },
+  "md5": "fd0a63c553339dbb78ad66b33292fd56",
+  "name": "conda-env",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1505980929630,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/conda-env-2.6.0-h36134e3_1.tar.bz2",
+  "version": "2.6.0"
+}

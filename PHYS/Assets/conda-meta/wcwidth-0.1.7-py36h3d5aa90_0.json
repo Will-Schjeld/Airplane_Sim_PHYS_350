@@ -1,0 +1,40 @@
+{
+  "arch": "x86_64",
+  "build": "py36h3d5aa90_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/wcwidth-0.1.7-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/wcwidth-0.1.7-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/wcwidth-0.1.7-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/wcwidth-0.1.7-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/wcwidth-0.1.7-py3.6.egg-info/zip-safe",
+    "Lib/site-packages/wcwidth/__init__.py",
+    "Lib/site-packages/wcwidth/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/wcwidth/__pycache__/table_wide.cpython-36.pyc",
+    "Lib/site-packages/wcwidth/__pycache__/table_zero.cpython-36.pyc",
+    "Lib/site-packages/wcwidth/__pycache__/wcwidth.cpython-36.pyc",
+    "Lib/site-packages/wcwidth/table_wide.py",
+    "Lib/site-packages/wcwidth/table_zero.py",
+    "Lib/site-packages/wcwidth/tests/__init__.py",
+    "Lib/site-packages/wcwidth/tests/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/wcwidth/tests/__pycache__/test_core.cpython-36.pyc",
+    "Lib/site-packages/wcwidth/tests/test_core.py",
+    "Lib/site-packages/wcwidth/wcwidth.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "MIT",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\wcwidth-0.1.7-py36h3d5aa90_0",
+    "type": "hard-link"
+  },
+  "md5": "9b77d881046a2c9eebf4582fa112f93b",
+  "name": "wcwidth",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1506014831779,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/wcwidth-0.1.7-py36h3d5aa90_0.tar.bz2",
+  "version": "0.1.7"
+}

@@ -1,0 +1,19 @@
+{
+  "arch": "x86_64",
+  "build": "mkl",
+  "build_number": 1,
+  "depends": [],
+  "files": [],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\blas-1.0-mkl",
+    "type": "hard-link"
+  },
+  "md5": "d827bfe42ac708819970501dd0edf980",
+  "name": "blas",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1526042825814,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/blas-1.0-mkl.tar.bz2",
+  "version": "1.0"
+}

@@ -1,0 +1,36 @@
+{
+  "arch": "x86_64",
+  "build": "py36hdf76b57_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/glob2-0.6-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/glob2-0.6-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/glob2-0.6-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/glob2-0.6-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/glob2/__init__.py",
+    "Lib/site-packages/glob2/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/glob2/__pycache__/compat.cpython-36.pyc",
+    "Lib/site-packages/glob2/__pycache__/fnmatch.cpython-36.pyc",
+    "Lib/site-packages/glob2/__pycache__/impl.cpython-36.pyc",
+    "Lib/site-packages/glob2/compat.py",
+    "Lib/site-packages/glob2/fnmatch.py",
+    "Lib/site-packages/glob2/impl.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "BSD-2-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\glob2-0.6-py36hdf76b57_0",
+    "type": "hard-link"
+  },
+  "md5": "8938c68bd7c66cd7ef245a40f263cc7e",
+  "name": "glob2",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1511295091827,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/glob2-0.6-py36hdf76b57_0.tar.bz2",
+  "version": "0.6"
+}

@@ -1,0 +1,32 @@
+{
+  "arch": "x86_64",
+  "build": "py36_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/cloudpickle-0.5.3.dist-info/INSTALLER",
+    "Lib/site-packages/cloudpickle-0.5.3.dist-info/METADATA",
+    "Lib/site-packages/cloudpickle-0.5.3.dist-info/RECORD",
+    "Lib/site-packages/cloudpickle-0.5.3.dist-info/WHEEL",
+    "Lib/site-packages/cloudpickle-0.5.3.dist-info/top_level.txt",
+    "Lib/site-packages/cloudpickle/__init__.py",
+    "Lib/site-packages/cloudpickle/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/cloudpickle/__pycache__/cloudpickle.cpython-36.pyc",
+    "Lib/site-packages/cloudpickle/cloudpickle.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "BSD 3-Clause",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\cloudpickle-0.5.3-py36_0",
+    "type": "hard-link"
+  },
+  "md5": "d483332d88566005856f62e34f65c6e0",
+  "name": "cloudpickle",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1526402645323,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/cloudpickle-0.5.3-py36_0.tar.bz2",
+  "version": "0.5.3"
+}

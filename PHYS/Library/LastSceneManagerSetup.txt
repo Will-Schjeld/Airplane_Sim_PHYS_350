@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/PHYS 350 - Environment.unity
+  isLoaded: 1
+  isActive: 1

@@ -1,0 +1,25 @@
+{
+  "arch": "x86_64",
+  "build": "py36h81696a8_1",
+  "build_number": 1,
+  "depends": [
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/backports/__init__.py",
+    "Lib/site-packages/backports/__pycache__/__init__.cpython-36.pyc"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "BSD",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\backports-1.0-py36h81696a8_1",
+    "type": "hard-link"
+  },
+  "md5": "eec7cdcbed1074f01189ef0bec4562b5",
+  "name": "backports",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1505850824566,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/backports-1.0-py36h81696a8_1.tar.bz2",
+  "version": "1.0"
+}

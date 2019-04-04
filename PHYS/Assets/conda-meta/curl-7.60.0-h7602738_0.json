@@ -1,0 +1,27 @@
+{
+  "arch": "x86_64",
+  "build": "h7602738_0",
+  "build_number": 0,
+  "depends": [
+    "libcurl 7.60.0 hc4dcbb0_0",
+    "vc 14.*",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "files": [
+    "Library/bin/curl.exe"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "MIT/X derivate (http://curl.haxx.se/docs/copyright.html)",
+  "license_family": "MIT",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\curl-7.60.0-h7602738_0",
+    "type": "hard-link"
+  },
+  "md5": "e83401f735ac12c2a85609ee955afa65",
+  "name": "curl",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1527109844247,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/curl-7.60.0-h7602738_0.tar.bz2",
+  "version": "7.60.0"
+}

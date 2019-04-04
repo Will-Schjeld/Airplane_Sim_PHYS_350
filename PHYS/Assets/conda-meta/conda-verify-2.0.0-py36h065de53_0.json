@@ -1,0 +1,41 @@
+{
+  "arch": "x86_64",
+  "build": "py36h065de53_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.6,<3.7.0a0",
+    "pyyaml"
+  ],
+  "files": [
+    "Lib/site-packages/conda_verify-2.0.0-py3.6.egg-info",
+    "Lib/site-packages/conda_verify/__init__.py",
+    "Lib/site-packages/conda_verify/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/conda_verify/__pycache__/conda_package_check.cpython-36.pyc",
+    "Lib/site-packages/conda_verify/__pycache__/const.cpython-36.pyc",
+    "Lib/site-packages/conda_verify/__pycache__/exceptions.cpython-36.pyc",
+    "Lib/site-packages/conda_verify/__pycache__/main.cpython-36.pyc",
+    "Lib/site-packages/conda_verify/__pycache__/utils.cpython-36.pyc",
+    "Lib/site-packages/conda_verify/__pycache__/verify.cpython-36.pyc",
+    "Lib/site-packages/conda_verify/conda_package_check.py",
+    "Lib/site-packages/conda_verify/const.py",
+    "Lib/site-packages/conda_verify/exceptions.py",
+    "Lib/site-packages/conda_verify/main.py",
+    "Lib/site-packages/conda_verify/utils.py",
+    "Lib/site-packages/conda_verify/verify.py",
+    "Scripts/conda-verify-script.py",
+    "Scripts/conda-verify.exe"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "BSD 3-Clause",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\conda-verify-2.0.0-py36h065de53_0",
+    "type": "hard-link"
+  },
+  "md5": "c9509f36055989ba445b4f1e484474bb",
+  "name": "conda-verify",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1506000802894,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/conda-verify-2.0.0-py36h065de53_0.tar.bz2",
+  "version": "2.0.0"
+}

@@ -1,0 +1,41 @@
+{
+  "arch": "x86_64",
+  "build": "py36_0",
+  "build_number": 0,
+  "depends": [
+    "flask >=0.9",
+    "python >=3.6,<3.7.0a0",
+    "six"
+  ],
+  "files": [
+    "Lib/site-packages/Flask_Cors-3.0.4.dist-info/INSTALLER",
+    "Lib/site-packages/Flask_Cors-3.0.4.dist-info/METADATA",
+    "Lib/site-packages/Flask_Cors-3.0.4.dist-info/RECORD",
+    "Lib/site-packages/Flask_Cors-3.0.4.dist-info/WHEEL",
+    "Lib/site-packages/Flask_Cors-3.0.4.dist-info/top_level.txt",
+    "Lib/site-packages/flask_cors/__init__.py",
+    "Lib/site-packages/flask_cors/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/flask_cors/__pycache__/core.cpython-36.pyc",
+    "Lib/site-packages/flask_cors/__pycache__/decorator.cpython-36.pyc",
+    "Lib/site-packages/flask_cors/__pycache__/extension.cpython-36.pyc",
+    "Lib/site-packages/flask_cors/__pycache__/version.cpython-36.pyc",
+    "Lib/site-packages/flask_cors/core.py",
+    "Lib/site-packages/flask_cors/decorator.py",
+    "Lib/site-packages/flask_cors/extension.py",
+    "Lib/site-packages/flask_cors/version.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\flask-cors-3.0.4-py36_0",
+    "type": "hard-link"
+  },
+  "md5": "ee6912412fdbaca8f090c1020021a843",
+  "name": "flask-cors",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1525809787846,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/flask-cors-3.0.4-py36_0.tar.bz2",
+  "version": "3.0.4"
+}

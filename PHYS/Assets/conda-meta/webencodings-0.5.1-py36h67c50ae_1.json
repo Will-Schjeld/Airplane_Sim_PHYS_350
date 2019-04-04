@@ -1,0 +1,38 @@
+{
+  "arch": "x86_64",
+  "build": "py36h67c50ae_1",
+  "build_number": 1,
+  "depends": [
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/webencodings-0.5.1-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/webencodings-0.5.1-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/webencodings-0.5.1-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/webencodings-0.5.1-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/webencodings/__init__.py",
+    "Lib/site-packages/webencodings/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/webencodings/__pycache__/labels.cpython-36.pyc",
+    "Lib/site-packages/webencodings/__pycache__/mklabels.cpython-36.pyc",
+    "Lib/site-packages/webencodings/__pycache__/tests.cpython-36.pyc",
+    "Lib/site-packages/webencodings/__pycache__/x_user_defined.cpython-36.pyc",
+    "Lib/site-packages/webencodings/labels.py",
+    "Lib/site-packages/webencodings/mklabels.py",
+    "Lib/site-packages/webencodings/tests.py",
+    "Lib/site-packages/webencodings/x_user_defined.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "BSD 3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\webencodings-0.5.1-py36h67c50ae_1",
+    "type": "hard-link"
+  },
+  "md5": "4ead92e3890745f99a502e873503e04f",
+  "name": "webencodings",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1505855447592,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/webencodings-0.5.1-py36h67c50ae_1.tar.bz2",
+  "version": "0.5.1"
+}

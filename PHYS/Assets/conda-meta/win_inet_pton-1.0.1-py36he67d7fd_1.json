@@ -1,0 +1,26 @@
+{
+  "arch": "x86_64",
+  "build": "py36he67d7fd_1",
+  "build_number": 1,
+  "depends": [
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/__pycache__/win_inet_pton.cpython-36.pyc",
+    "Lib/site-packages/win_inet_pton-1.0.1-py3.6.egg-info",
+    "Lib/site-packages/win_inet_pton.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "PUBLIC-DOMAIN",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\win_inet_pton-1.0.1-py36he67d7fd_1",
+    "type": "hard-link"
+  },
+  "md5": "a8a6c7ed2c1ccf3d87f62d9d868488e8",
+  "name": "win_inet_pton",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1505869327713,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/win_inet_pton-1.0.1-py36he67d7fd_1.tar.bz2",
+  "version": "1.0.1"
+}

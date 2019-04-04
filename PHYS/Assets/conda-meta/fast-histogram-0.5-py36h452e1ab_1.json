@@ -1,0 +1,151 @@
+{
+  "arch": "x86_64",
+  "build": "py36h452e1ab_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "numpy >=1.11.3,<2.0a0",
+    "python >=3.6,<3.7.0a0",
+    "vc 14.*"
+  ],
+  "extracted_package_dir": "C:\\Users\\danie\\Anaconda3\\pkgs\\fast-histogram-0.5-py36h452e1ab_1",
+  "features": "",
+  "files": [
+    "Lib/site-packages/fast_histogram-0.5.dist-info/INSTALLER",
+    "Lib/site-packages/fast_histogram-0.5.dist-info/METADATA",
+    "Lib/site-packages/fast_histogram-0.5.dist-info/RECORD",
+    "Lib/site-packages/fast_histogram-0.5.dist-info/WHEEL",
+    "Lib/site-packages/fast_histogram-0.5.dist-info/top_level.txt",
+    "Lib/site-packages/fast_histogram/__init__.py",
+    "Lib/site-packages/fast_histogram/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/fast_histogram/__pycache__/histogram.cpython-36.pyc",
+    "Lib/site-packages/fast_histogram/_histogram_core.cp36-win_amd64.pyd",
+    "Lib/site-packages/fast_histogram/histogram.py",
+    "Lib/site-packages/fast_histogram/tests/__init__.py",
+    "Lib/site-packages/fast_histogram/tests/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/fast_histogram/tests/__pycache__/test_histogram.cpython-36.pyc",
+    "Lib/site-packages/fast_histogram/tests/test_histogram.py"
+  ],
+  "fn": "fast-histogram-0.5-py36h452e1ab_1.tar.bz2",
+  "license": "BSD",
+  "license_family": "BSD",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\fast-histogram-0.5-py36h452e1ab_1",
+    "type": 1
+  },
+  "md5": "a2ba779e261a0d9e08bd177d08fb7e55",
+  "name": "fast-histogram",
+  "package_tarball_full_path": "C:\\Users\\danie\\Anaconda3\\pkgs\\fast-histogram-0.5-py36h452e1ab_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Lib/site-packages/fast_histogram-0.5.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "sha256_in_prefix": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "size_in_bytes": 4
+      },
+      {
+        "_path": "Lib/site-packages/fast_histogram-0.5.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "62fea2441b6ba62391f3eced8d406c3d8780cfde2d71a71f96901cc962f7abff",
+        "sha256_in_prefix": "62fea2441b6ba62391f3eced8d406c3d8780cfde2d71a71f96901cc962f7abff",
+        "size_in_bytes": 6635
+      },
+      {
+        "_path": "Lib/site-packages/fast_histogram-0.5.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "2954cd4c14c7fca024d3777b29327831402f0d70ea105c478b15484b0b638c2d",
+        "sha256_in_prefix": "2954cd4c14c7fca024d3777b29327831402f0d70ea105c478b15484b0b638c2d",
+        "size_in_bytes": 1109
+      },
+      {
+        "_path": "Lib/site-packages/fast_histogram-0.5.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "c6adc9eac076a09aa3bf4b430bbb46506be77b57ceba0c352549a4f3a400ed43",
+        "sha256_in_prefix": "c6adc9eac076a09aa3bf4b430bbb46506be77b57ceba0c352549a4f3a400ed43",
+        "size_in_bytes": 106
+      },
+      {
+        "_path": "Lib/site-packages/fast_histogram-0.5.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "2befbf1d843efcb3f60e16f9fdc3607f1500488fb0530f362b46859410a8ad3a",
+        "sha256_in_prefix": "2befbf1d843efcb3f60e16f9fdc3607f1500488fb0530f362b46859410a8ad3a",
+        "size_in_bytes": 15
+      },
+      {
+        "_path": "Lib/site-packages/fast_histogram/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "912a657461fea1cfe78e668be2b26d0d2f17a301df981836e6dc91b7cfe86e70",
+        "sha256_in_prefix": "912a657461fea1cfe78e668be2b26d0d2f17a301df981836e6dc91b7cfe86e70",
+        "size_in_bytes": 46
+      },
+      {
+        "_path": "Lib/site-packages/fast_histogram/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "2fe4a6117e408dbcdae7cde02b86e8038a59735d62be61f48954ecf847df1911",
+        "sha256_in_prefix": "2fe4a6117e408dbcdae7cde02b86e8038a59735d62be61f48954ecf847df1911",
+        "size_in_bytes": 177
+      },
+      {
+        "_path": "Lib/site-packages/fast_histogram/__pycache__/histogram.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "e18191c6f66e64fff31134e5ada9c6d6b48441e6d2ea72c2c0c04754d7df4edd",
+        "sha256_in_prefix": "e18191c6f66e64fff31134e5ada9c6d6b48441e6d2ea72c2c0c04754d7df4edd",
+        "size_in_bytes": 2770
+      },
+      {
+        "_path": "Lib/site-packages/fast_histogram/_histogram_core.cp36-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "fdb18ee14b93fc37dbe8a459e5db766ada64d8577b29063bd35ebf65f15f468e",
+        "sha256_in_prefix": "fdb18ee14b93fc37dbe8a459e5db766ada64d8577b29063bd35ebf65f15f468e",
+        "size_in_bytes": 21504
+      },
+      {
+        "_path": "Lib/site-packages/fast_histogram/histogram.py",
+        "path_type": "hardlink",
+        "sha256": "b3da82a0c06b69b6bc389375de807902aaee763bf795f87a318720bc214c7ba3",
+        "sha256_in_prefix": "b3da82a0c06b69b6bc389375de807902aaee763bf795f87a318720bc214c7ba3",
+        "size_in_bytes": 3213
+      },
+      {
+        "_path": "Lib/site-packages/fast_histogram/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/fast_histogram/tests/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "34a5f07ff61836a0349ff4982870ff4594553357443dad952342459bf8ef0dc0",
+        "sha256_in_prefix": "34a5f07ff61836a0349ff4982870ff4594553357443dad952342459bf8ef0dc0",
+        "size_in_bytes": 133
+      },
+      {
+        "_path": "Lib/site-packages/fast_histogram/tests/__pycache__/test_histogram.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "fc7d67409fae9950e9924aa5c047f1e69d820f5444a7026c120598f1178d3932",
+        "sha256_in_prefix": "fc7d67409fae9950e9924aa5c047f1e69d820f5444a7026c120598f1178d3932",
+        "size_in_bytes": 4640
+      },
+      {
+        "_path": "Lib/site-packages/fast_histogram/tests/test_histogram.py",
+        "path_type": "hardlink",
+        "sha256": "228da6a0167ed45b11e799d18dff73a6b30747ced531b2d7079a097f5affc73a",
+        "sha256_in_prefix": "228da6a0167ed45b11e799d18dff73a6b30747ced531b2d7079a097f5affc73a",
+        "size_in_bytes": 6450
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "win32",
+  "requested_spec": "None",
+  "size": 24301,
+  "subdir": "win-64",
+  "timestamp": 1535424579161,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/fast-histogram-0.5-py36h452e1ab_1.tar.bz2",
+  "version": "0.5"
+}

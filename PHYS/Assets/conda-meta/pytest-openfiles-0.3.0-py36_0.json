@@ -1,0 +1,37 @@
+{
+  "arch": "x86_64",
+  "build": "py36_0",
+  "build_number": 0,
+  "depends": [
+    "psutil",
+    "pytest >=2.8.0",
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/pytest_openfiles-0.3.0-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/pytest_openfiles-0.3.0-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/pytest_openfiles-0.3.0-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/pytest_openfiles-0.3.0-py3.6.egg-info/entry_points.txt",
+    "Lib/site-packages/pytest_openfiles-0.3.0-py3.6.egg-info/installed-files.txt",
+    "Lib/site-packages/pytest_openfiles-0.3.0-py3.6.egg-info/not-zip-safe",
+    "Lib/site-packages/pytest_openfiles-0.3.0-py3.6.egg-info/requires.txt",
+    "Lib/site-packages/pytest_openfiles-0.3.0-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/pytest_openfiles/__init__.py",
+    "Lib/site-packages/pytest_openfiles/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/pytest_openfiles/__pycache__/plugin.cpython-36.pyc",
+    "Lib/site-packages/pytest_openfiles/plugin.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "BSD",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\pytest-openfiles-0.3.0-py36_0",
+    "type": "hard-link"
+  },
+  "md5": "aaae1a8a0ef3acbe1f59db537e23c8a6",
+  "name": "pytest-openfiles",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1524578895489,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/pytest-openfiles-0.3.0-py36_0.tar.bz2",
+  "version": "0.3.0"
+}

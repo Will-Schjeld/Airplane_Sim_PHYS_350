@@ -1,0 +1,31 @@
+{
+  "arch": "x86_64",
+  "build": "py36_0",
+  "build_number": 0,
+  "depends": [
+    "bokeh",
+    "cloudpickle >=0.2.1",
+    "cytoolz >=0.7.3",
+    "dask-core 0.17.5.*",
+    "distributed >=1.21.0",
+    "numpy >=1.11.0",
+    "pandas >=0.19.0",
+    "partd >=0.3.8",
+    "python >=3.6,<3.7.0a0",
+    "toolz >=0.7.3"
+  ],
+  "files": [],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "BSD 3-Clause",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\dask-0.17.5-py36_0",
+    "type": "hard-link"
+  },
+  "md5": "29c6d89bc5a1a7e16a7252a2e95b1983",
+  "name": "dask",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1526528084963,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/dask-0.17.5-py36_0.tar.bz2",
+  "version": "0.17.5"
+}

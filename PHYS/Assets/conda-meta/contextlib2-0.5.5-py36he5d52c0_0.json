@@ -1,0 +1,30 @@
+{
+  "arch": "x86_64",
+  "build": "py36he5d52c0_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/__pycache__/contextlib2.cpython-36.pyc",
+    "Lib/site-packages/contextlib2-0.5.5-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/contextlib2-0.5.5-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/contextlib2-0.5.5-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/contextlib2-0.5.5-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/contextlib2.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "PSF",
+  "license_family": "PSF",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\contextlib2-0.5.5-py36he5d52c0_0",
+    "type": "hard-link"
+  },
+  "md5": "afc58559c334857b71a96992ed39a1e0",
+  "name": "contextlib2",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1506000704459,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/contextlib2-0.5.5-py36he5d52c0_0.tar.bz2",
+  "version": "0.5.5"
+}

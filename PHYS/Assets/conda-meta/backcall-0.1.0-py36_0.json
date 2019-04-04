@@ -1,0 +1,35 @@
+{
+  "arch": "x86_64",
+  "build": "py36_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/backcall-0.1.0-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/backcall-0.1.0-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/backcall-0.1.0-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/backcall-0.1.0-py3.6.egg-info/installed-files.txt",
+    "Lib/site-packages/backcall-0.1.0-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/backcall/__init__.py",
+    "Lib/site-packages/backcall/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/backcall/__pycache__/_signatures.cpython-36.pyc",
+    "Lib/site-packages/backcall/__pycache__/backcall.cpython-36.pyc",
+    "Lib/site-packages/backcall/_signatures.py",
+    "Lib/site-packages/backcall/backcall.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\backcall-0.1.0-py36_0",
+    "type": "hard-link"
+  },
+  "md5": "9f2c622773cc0a11a251eb6543c426d2",
+  "name": "backcall",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1522691755915,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/backcall-0.1.0-py36_0.tar.bz2",
+  "version": "0.1.0"
+}

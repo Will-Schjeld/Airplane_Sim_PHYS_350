@@ -1,0 +1,224 @@
+{
+  "arch": "x86_64",
+  "build": "py36_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/win-64",
+  "constrains": [],
+  "depends": [
+    "pymsgbox",
+    "pyscreeze",
+    "python >=3.6,<3.7.0a0",
+    "pytweening"
+  ],
+  "extracted_package_dir": "C:\\Users\\danie\\Anaconda3\\pkgs\\pyautogui-0.9.38-py36_0",
+  "features": "",
+  "files": [
+    "Lib/site-packages/PyAutoGUI-0.9.38-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/PyAutoGUI-0.9.38-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/PyAutoGUI-0.9.38-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/PyAutoGUI-0.9.38-py3.6.egg-info/requires.txt",
+    "Lib/site-packages/PyAutoGUI-0.9.38-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/pyautogui/__init__.py",
+    "Lib/site-packages/pyautogui/__main__.py",
+    "Lib/site-packages/pyautogui/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/pyautogui/__pycache__/__main__.cpython-36.pyc",
+    "Lib/site-packages/pyautogui/__pycache__/_pyautogui_java.cpython-36.pyc",
+    "Lib/site-packages/pyautogui/__pycache__/_pyautogui_osx.cpython-36.pyc",
+    "Lib/site-packages/pyautogui/__pycache__/_pyautogui_win.cpython-36.pyc",
+    "Lib/site-packages/pyautogui/__pycache__/_pyautogui_x11.cpython-36.pyc",
+    "Lib/site-packages/pyautogui/__pycache__/_window_win.cpython-36.pyc",
+    "Lib/site-packages/pyautogui/__pycache__/screenshotUtil.cpython-36.pyc",
+    "Lib/site-packages/pyautogui/__pycache__/tweens.cpython-36.pyc",
+    "Lib/site-packages/pyautogui/_pyautogui_java.py",
+    "Lib/site-packages/pyautogui/_pyautogui_osx.py",
+    "Lib/site-packages/pyautogui/_pyautogui_win.py",
+    "Lib/site-packages/pyautogui/_pyautogui_x11.py",
+    "Lib/site-packages/pyautogui/_window_win.py",
+    "Lib/site-packages/pyautogui/screenshotUtil.py",
+    "Lib/site-packages/pyautogui/tweens.py"
+  ],
+  "fn": "pyautogui-0.9.38-py36_0.tar.bz2",
+  "license": "BSD 3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\pyautogui-0.9.38-py36_0",
+    "type": 1
+  },
+  "md5": "71d18792293e9651e08d76eebfa6a9db",
+  "name": "pyautogui",
+  "package_tarball_full_path": "C:\\Users\\danie\\Anaconda3\\pkgs\\pyautogui-0.9.38-py36_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Lib/site-packages/PyAutoGUI-0.9.38-py3.6.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "b6f343490220abffc7f2af34082d18fa30d22bd6f2d8e0d76f3a757df7c7bfba",
+        "sha256_in_prefix": "b6f343490220abffc7f2af34082d18fa30d22bd6f2d8e0d76f3a757df7c7bfba",
+        "size_in_bytes": 5885
+      },
+      {
+        "_path": "Lib/site-packages/PyAutoGUI-0.9.38-py3.6.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "0344c6690b696849d519b5f38a3d4a937f8d8567d8f6ede4c317bf28277bd4cb",
+        "sha256_in_prefix": "0344c6690b696849d519b5f38a3d4a937f8d8567d8f6ede4c317bf28277bd4cb",
+        "size_in_bytes": 722
+      },
+      {
+        "_path": "Lib/site-packages/PyAutoGUI-0.9.38-py3.6.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "Lib/site-packages/PyAutoGUI-0.9.38-py3.6.egg-info/requires.txt",
+        "path_type": "hardlink",
+        "sha256": "aeae64a53efa7a44db19b62c1ef7a044d7aa004a2ed08c5173a03fcc8b583ab8",
+        "sha256_in_prefix": "aeae64a53efa7a44db19b62c1ef7a044d7aa004a2ed08c5173a03fcc8b583ab8",
+        "size_in_bytes": 44
+      },
+      {
+        "_path": "Lib/site-packages/PyAutoGUI-0.9.38-py3.6.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "633b665aec7e88fa05dc3bfdc79df4bd9bda7b490c06c19b3c0a0a81644602f9",
+        "sha256_in_prefix": "633b665aec7e88fa05dc3bfdc79df4bd9bda7b490c06c19b3c0a0a81644602f9",
+        "size_in_bytes": 10
+      },
+      {
+        "_path": "Lib/site-packages/pyautogui/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "db7fd1b0d77a632d9c139550527df11dd4dd2ff3121d7e9b0939c369548668c2",
+        "sha256_in_prefix": "db7fd1b0d77a632d9c139550527df11dd4dd2ff3121d7e9b0939c369548668c2",
+        "size_in_bytes": 40039
+      },
+      {
+        "_path": "Lib/site-packages/pyautogui/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "3fc372dce49c1ebbadb17533f94b2a29a99a162856f98baad18cca1e44460032",
+        "sha256_in_prefix": "3fc372dce49c1ebbadb17533f94b2a29a99a162856f98baad18cca1e44460032",
+        "size_in_bytes": 58
+      },
+      {
+        "_path": "Lib/site-packages/pyautogui/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "98150f227e71f2be05f2984eb9f228060fb24f65dfb0a43d43ea66cfdb1f05cf",
+        "sha256_in_prefix": "98150f227e71f2be05f2984eb9f228060fb24f65dfb0a43d43ea66cfdb1f05cf",
+        "size_in_bytes": 35572
+      },
+      {
+        "_path": "Lib/site-packages/pyautogui/__pycache__/__main__.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "fbf52fc2ce2c228aa5d323f2ead143ee42c6acaff249fe1eca18efcb9ba06fae",
+        "sha256_in_prefix": "fbf52fc2ce2c228aa5d323f2ead143ee42c6acaff249fe1eca18efcb9ba06fae",
+        "size_in_bytes": 175
+      },
+      {
+        "_path": "Lib/site-packages/pyautogui/__pycache__/_pyautogui_java.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "b14e6bd0ddec7fb43f60c239eaa3cee6ea8ad870fa00d16b15d1ae2685055cc2",
+        "sha256_in_prefix": "b14e6bd0ddec7fb43f60c239eaa3cee6ea8ad870fa00d16b15d1ae2685055cc2",
+        "size_in_bytes": 129
+      },
+      {
+        "_path": "Lib/site-packages/pyautogui/__pycache__/_pyautogui_osx.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "21e1236f78b43b42b688bbe850c66b885fdbd5f9f17a5a8772c8fa0283ba75e8",
+        "sha256_in_prefix": "21e1236f78b43b42b688bbe850c66b885fdbd5f9f17a5a8772c8fa0283ba75e8",
+        "size_in_bytes": 8595
+      },
+      {
+        "_path": "Lib/site-packages/pyautogui/__pycache__/_pyautogui_win.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "0e304ee72dba982b1916595844c8c4b49f05989c55d830f04d6b2e071f89f18b",
+        "sha256_in_prefix": "0e304ee72dba982b1916595844c8c4b49f05989c55d830f04d6b2e071f89f18b",
+        "size_in_bytes": 11993
+      },
+      {
+        "_path": "Lib/site-packages/pyautogui/__pycache__/_pyautogui_x11.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "9415ea8cddcfdcc3be5ddf93159ed5331c6cffe5f79a232f8a0ae3777c47c140",
+        "sha256_in_prefix": "9415ea8cddcfdcc3be5ddf93159ed5331c6cffe5f79a232f8a0ae3777c47c140",
+        "size_in_bytes": 8054
+      },
+      {
+        "_path": "Lib/site-packages/pyautogui/__pycache__/_window_win.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "29751d416cc0b1493e6def005bbe3854b722c96b8d1a7fa9d238a794f9d73d2c",
+        "sha256_in_prefix": "29751d416cc0b1493e6def005bbe3854b722c96b8d1a7fa9d238a794f9d73d2c",
+        "size_in_bytes": 3934
+      },
+      {
+        "_path": "Lib/site-packages/pyautogui/__pycache__/screenshotUtil.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "60dd06bf7368d9601f11f480e30ddb2ba3dc8a20499340cc37013e3f8fb7e136",
+        "sha256_in_prefix": "60dd06bf7368d9601f11f480e30ddb2ba3dc8a20499340cc37013e3f8fb7e136",
+        "size_in_bytes": 5740
+      },
+      {
+        "_path": "Lib/site-packages/pyautogui/__pycache__/tweens.cpython-36.pyc",
+        "path_type": "hardlink",
+        "sha256": "9a8862673058160c80ba8b26ac245d3c742231bc2a11b0f9a35df565e40e9706",
+        "sha256_in_prefix": "9a8862673058160c80ba8b26ac245d3c742231bc2a11b0f9a35df565e40e9706",
+        "size_in_bytes": 846
+      },
+      {
+        "_path": "Lib/site-packages/pyautogui/_pyautogui_java.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/pyautogui/_pyautogui_osx.py",
+        "path_type": "hardlink",
+        "sha256": "2f01baa05b3df8c531c606bb3e3d7907651c185c412627aea07eb2c798c79d2a",
+        "sha256_in_prefix": "2f01baa05b3df8c531c606bb3e3d7907651c185c412627aea07eb2c798c79d2a",
+        "size_in_bytes": 15647
+      },
+      {
+        "_path": "Lib/site-packages/pyautogui/_pyautogui_win.py",
+        "path_type": "hardlink",
+        "sha256": "c878795ed058a63128c653e825f84deea1d18aed37f6e1e54c4a1a8b6880dcad",
+        "sha256_in_prefix": "c878795ed058a63128c653e825f84deea1d18aed37f6e1e54c4a1a8b6880dcad",
+        "size_in_bytes": 21296
+      },
+      {
+        "_path": "Lib/site-packages/pyautogui/_pyautogui_x11.py",
+        "path_type": "hardlink",
+        "sha256": "fe0ed53973ba1e316fae112bf5bb76475a35ba7decf95cce9939243ea4ef0a81",
+        "sha256_in_prefix": "fe0ed53973ba1e316fae112bf5bb76475a35ba7decf95cce9939243ea4ef0a81",
+        "size_in_bytes": 15634
+      },
+      {
+        "_path": "Lib/site-packages/pyautogui/_window_win.py",
+        "path_type": "hardlink",
+        "sha256": "45e2e7cdd3a84be865b135a40f6750faac94ff2b8e12994960771936d671034e",
+        "sha256_in_prefix": "45e2e7cdd3a84be865b135a40f6750faac94ff2b8e12994960771936d671034e",
+        "size_in_bytes": 3902
+      },
+      {
+        "_path": "Lib/site-packages/pyautogui/screenshotUtil.py",
+        "path_type": "hardlink",
+        "sha256": "36508f0d6288767b187b7b348fc2466af2193b3a948f008df387995772922eea",
+        "sha256_in_prefix": "36508f0d6288767b187b7b348fc2466af2193b3a948f008df387995772922eea",
+        "size_in_bytes": 8364
+      },
+      {
+        "_path": "Lib/site-packages/pyautogui/tweens.py",
+        "path_type": "hardlink",
+        "sha256": "36a8d972eb0fea37317d0c5adf3b0c55fb793d9ae9a2ec65a4384ecbf91df2cf",
+        "sha256_in_prefix": "36a8d972eb0fea37317d0c5adf3b0c55fb793d9ae9a2ec65a4384ecbf91df2cf",
+        "size_in_bytes": 1440
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "win32",
+  "requested_spec": "pyautogui",
+  "size": 45745,
+  "subdir": "win-64",
+  "timestamp": 1532242872816,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/pyautogui-0.9.38-py36_0.tar.bz2",
+  "version": "0.9.38"
+}

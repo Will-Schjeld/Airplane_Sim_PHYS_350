@@ -1,0 +1,145 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python"
+  ],
+  "extracted_package_dir": "C:\\Users\\danie\\Anaconda3\\pkgs\\pymsgbox-1.0.6-py_0",
+  "features": "",
+  "files": [
+    "Lib/site-packages/PyMsgBox-1.0.6-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/PyMsgBox-1.0.6-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/PyMsgBox-1.0.6-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/PyMsgBox-1.0.6-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/pymsgbox/__init__.py",
+    "Lib/site-packages/pymsgbox/_native_java.py",
+    "Lib/site-packages/pymsgbox/_native_osx.py",
+    "Lib/site-packages/pymsgbox/_native_win.py",
+    "Lib/site-packages/pymsgbox/_native_x11.py",
+    "Lib/site-packages/pymsgbox/native.py",
+    "Lib/site-packages/pymsgbox/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/pymsgbox/__pycache__/_native_java.cpython-36.pyc",
+    "Lib/site-packages/pymsgbox/__pycache__/_native_osx.cpython-36.pyc",
+    "Lib/site-packages/pymsgbox/__pycache__/_native_win.cpython-36.pyc",
+    "Lib/site-packages/pymsgbox/__pycache__/_native_x11.cpython-36.pyc",
+    "Lib/site-packages/pymsgbox/__pycache__/native.cpython-36.pyc"
+  ],
+  "fn": "pymsgbox-1.0.6-py_0.tar.bz2",
+  "license": "BSD 3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\pymsgbox-1.0.6-py_0",
+    "type": 1
+  },
+  "md5": "eb23bbaea2a0d82301da84599b616dc1",
+  "name": "pymsgbox",
+  "noarch": "python",
+  "package_tarball_full_path": "C:\\Users\\danie\\Anaconda3\\pkgs\\pymsgbox-1.0.6-py_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/PyMsgBox-1.0.6-py3.6.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "b89d61d57f1deb67fe7392cd06531354a43cb0c36ab851ef1ce450513ac55256",
+        "sha256_in_prefix": "b89d61d57f1deb67fe7392cd06531354a43cb0c36ab851ef1ce450513ac55256",
+        "size_in_bytes": 1222
+      },
+      {
+        "_path": "site-packages/PyMsgBox-1.0.6-py3.6.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "4bee2eeb68aa23d52084fd18f978ba15fcfe69655334aa401155e30c910cef9d",
+        "sha256_in_prefix": "4bee2eeb68aa23d52084fd18f978ba15fcfe69655334aa401155e30c910cef9d",
+        "size_in_bytes": 444
+      },
+      {
+        "_path": "site-packages/PyMsgBox-1.0.6-py3.6.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "site-packages/PyMsgBox-1.0.6-py3.6.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "561ba6c476d10e8fab6521ffb712f8d4340ee0309a483234973d80221c141db9",
+        "sha256_in_prefix": "561ba6c476d10e8fab6521ffb712f8d4340ee0309a483234973d80221c141db9",
+        "size_in_bytes": 9
+      },
+      {
+        "_path": "site-packages/pymsgbox/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "a3f34619cde9f619f78253bb5f5416ab765459980b47f0bc05465ae1a4b8d0cd",
+        "sha256_in_prefix": "a3f34619cde9f619f78253bb5f5416ab765459980b47f0bc05465ae1a4b8d0cd",
+        "size_in_bytes": 13415
+      },
+      {
+        "_path": "site-packages/pymsgbox/_native_java.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/pymsgbox/_native_osx.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/pymsgbox/_native_win.py",
+        "path_type": "hardlink",
+        "sha256": "b1bba295300f3af1a99fcc089259f15b31ae55b11f41e30a46aa30c94567e52b",
+        "sha256_in_prefix": "b1bba295300f3af1a99fcc089259f15b31ae55b11f41e30a46aa30c94567e52b",
+        "size_in_bytes": 1982
+      },
+      {
+        "_path": "site-packages/pymsgbox/_native_x11.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/pymsgbox/native.py",
+        "path_type": "hardlink",
+        "sha256": "41f0c3dafb04f695b63241e10272ed83ac96eb654bda2c17442444983089e7a4",
+        "sha256_in_prefix": "41f0c3dafb04f695b63241e10272ed83ac96eb654bda2c17442444983089e7a4",
+        "size_in_bytes": 862
+      },
+      {
+        "_path": "Lib/site-packages/pymsgbox/__pycache__/__init__.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/pymsgbox/__pycache__/_native_java.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/pymsgbox/__pycache__/_native_osx.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/pymsgbox/__pycache__/_native_win.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/pymsgbox/__pycache__/_native_x11.cpython-36.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/pymsgbox/__pycache__/native.cpython-36.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "size": 8513,
+  "subdir": "noarch",
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/pymsgbox-1.0.6-py_0.tar.bz2",
+  "version": "1.0.6"
+}

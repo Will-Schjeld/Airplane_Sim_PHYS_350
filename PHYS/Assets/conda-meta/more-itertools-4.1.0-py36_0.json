@@ -1,0 +1,43 @@
+{
+  "arch": "x86_64",
+  "build": "py36_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.6,<3.7.0a0",
+    "six >=1.0.0,<2.0.0"
+  ],
+  "files": [
+    "Lib/site-packages/more_itertools-4.1.0-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/more_itertools-4.1.0-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/more_itertools-4.1.0-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/more_itertools-4.1.0-py3.6.egg-info/installed-files.txt",
+    "Lib/site-packages/more_itertools-4.1.0-py3.6.egg-info/requires.txt",
+    "Lib/site-packages/more_itertools-4.1.0-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/more_itertools/__init__.py",
+    "Lib/site-packages/more_itertools/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/more_itertools/__pycache__/more.cpython-36.pyc",
+    "Lib/site-packages/more_itertools/__pycache__/recipes.cpython-36.pyc",
+    "Lib/site-packages/more_itertools/more.py",
+    "Lib/site-packages/more_itertools/recipes.py",
+    "Lib/site-packages/more_itertools/tests/__init__.py",
+    "Lib/site-packages/more_itertools/tests/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/more_itertools/tests/__pycache__/test_more.cpython-36.pyc",
+    "Lib/site-packages/more_itertools/tests/__pycache__/test_recipes.cpython-36.pyc",
+    "Lib/site-packages/more_itertools/tests/test_more.py",
+    "Lib/site-packages/more_itertools/tests/test_recipes.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\more-itertools-4.1.0-py36_0",
+    "type": "hard-link"
+  },
+  "md5": "2a625d006a603bf363ae4702e0047e74",
+  "name": "more-itertools",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1519236793491,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/more-itertools-4.1.0-py36_0.tar.bz2",
+  "version": "4.1.0"
+}

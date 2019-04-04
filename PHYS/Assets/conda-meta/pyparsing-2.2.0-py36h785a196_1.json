@@ -1,0 +1,29 @@
+{
+  "arch": "x86_64",
+  "build": "py36h785a196_1",
+  "build_number": 1,
+  "depends": [
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/__pycache__/pyparsing.cpython-36.pyc",
+    "Lib/site-packages/pyparsing-2.2.0-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/pyparsing-2.2.0-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/pyparsing-2.2.0-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/pyparsing-2.2.0-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/pyparsing.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "MIT",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\pyparsing-2.2.0-py36h785a196_1",
+    "type": "hard-link"
+  },
+  "md5": "fe628e015a78d5b100f9a9bb4cf4b332",
+  "name": "pyparsing",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1505893830729,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/pyparsing-2.2.0-py36h785a196_1.tar.bz2",
+  "version": "2.2.0"
+}

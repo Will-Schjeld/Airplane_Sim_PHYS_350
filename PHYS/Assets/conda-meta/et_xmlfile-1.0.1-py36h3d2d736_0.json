@@ -1,0 +1,40 @@
+{
+  "arch": "x86_64",
+  "build": "py36h3d2d736_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/et_xmlfile-1.0.1-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/et_xmlfile-1.0.1-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/et_xmlfile-1.0.1-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/et_xmlfile-1.0.1-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/et_xmlfile/__init__.py",
+    "Lib/site-packages/et_xmlfile/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/et_xmlfile/__pycache__/xmlfile.cpython-36.pyc",
+    "Lib/site-packages/et_xmlfile/tests/__init__.py",
+    "Lib/site-packages/et_xmlfile/tests/__pycache__/__init__.cpython-36.pyc",
+    "Lib/site-packages/et_xmlfile/tests/__pycache__/common_imports.cpython-36.pyc",
+    "Lib/site-packages/et_xmlfile/tests/__pycache__/helper.cpython-36.pyc",
+    "Lib/site-packages/et_xmlfile/tests/__pycache__/test_incremental_xmlfile.cpython-36.pyc",
+    "Lib/site-packages/et_xmlfile/tests/common_imports.py",
+    "Lib/site-packages/et_xmlfile/tests/helper.py",
+    "Lib/site-packages/et_xmlfile/tests/test_incremental_xmlfile.py",
+    "Lib/site-packages/et_xmlfile/xmlfile.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\et_xmlfile-1.0.1-py36h3d2d736_0",
+    "type": "hard-link"
+  },
+  "md5": "1b0d01993ce9f3b4ecbb4a84d3fef72e",
+  "name": "et_xmlfile",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1506006640151,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/et_xmlfile-1.0.1-py36h3d2d736_0.tar.bz2",
+  "version": "1.0.1"
+}

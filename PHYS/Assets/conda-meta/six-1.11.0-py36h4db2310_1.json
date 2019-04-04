@@ -1,0 +1,30 @@
+{
+  "arch": "x86_64",
+  "build": "py36h4db2310_1",
+  "build_number": 1,
+  "depends": [
+    "python >=3.6,<3.7.0a0"
+  ],
+  "files": [
+    "Lib/site-packages/__pycache__/six.cpython-36.pyc",
+    "Lib/site-packages/six-1.11.0-py3.6.egg-info/PKG-INFO",
+    "Lib/site-packages/six-1.11.0-py3.6.egg-info/SOURCES.txt",
+    "Lib/site-packages/six-1.11.0-py3.6.egg-info/dependency_links.txt",
+    "Lib/site-packages/six-1.11.0-py3.6.egg-info/top_level.txt",
+    "Lib/site-packages/six.py"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\six-1.11.0-py36h4db2310_1",
+    "type": "hard-link"
+  },
+  "md5": "a2a0aee14dde0c31b41bd7a59e2e7e99",
+  "name": "six",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1508610737451,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/six-1.11.0-py36h4db2310_1.tar.bz2",
+  "version": "1.11.0"
+}

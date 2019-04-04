@@ -1,0 +1,27 @@
+{
+  "arch": "x86_64",
+  "build": "py36h9fa60d3_1",
+  "build_number": 1,
+  "depends": [
+    "icc_rt >=16.0.4",
+    "mkl_fft",
+    "mkl_random",
+    "numpy-base 1.14.3 py36h555522e_1",
+    "python >=3.6,<3.7.0a0",
+    "vc 14.*"
+  ],
+  "files": [],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "BSD 3-Clause",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\numpy-1.14.3-py36h9fa60d3_1",
+    "type": "hard-link"
+  },
+  "md5": "58f10ffbbad915621196c1f78048423a",
+  "name": "numpy",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1526858743651,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/numpy-1.14.3-py36h9fa60d3_1.tar.bz2",
+  "version": "1.14.3"
+}

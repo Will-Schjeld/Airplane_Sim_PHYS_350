@@ -1,0 +1,26 @@
+{
+  "arch": "x86_64",
+  "build": "4",
+  "build_number": 4,
+  "depends": [],
+  "files": [
+    "Library/bin/winpty-agent.exe",
+    "Library/bin/winpty.dll",
+    "Library/include/winpty.h",
+    "Library/include/winpty_constants.h",
+    "Library/lib/winpty.lib"
+  ],
+  "installed_by": "Anaconda3-5.2.0-Windows-x86_64.exe",
+  "license": "MIT",
+  "link": {
+    "source": "C:\\Users\\danie\\Anaconda3\\pkgs\\winpty-0.4.3-4",
+    "type": "hard-link"
+  },
+  "md5": "c5bdb727945bad906d23e44199144746",
+  "name": "winpty",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1517593466234,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/winpty-0.4.3-4.tar.bz2",
+  "version": "0.4.3"
+}
