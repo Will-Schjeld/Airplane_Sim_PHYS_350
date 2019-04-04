@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+"http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Physics</title>
+        <meta name="description" content="Paper Planes"/>
+        <link rel="stylesheet" href="./markup.css">
+        <script src="https://fred-wang.github.io/mathjax.js/mpadded-min.js"></script>
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="javascript/script.js"></script>
+    </head>
+    <body>
+        <div class="grid" id="main">
+            <div class ="title">
+                <h1 class="mainTitle" id="subpage">The Physics</h1>
+            </div>
+            <div class="text">
+                <p data-aos="zoom-in" class="writing">
+                    Although complicated at first glance, the equations for the flight of a paper airplane can be boiled down into a few simple concepts!
+                </p>
+                <h3 data-aos="zoom-in" class="header">Coordinates</h3>
+                <p data-aos="zoom-in" class="writing">
+                    The main difficulty in creating any flight simulation, comes from the need to deal with six degrees of freedom. The plane is able to move forward, backward, up, down, and rotate around any of its three axes. These motions are the groundwork for flight, and we need to understand how they work with one another to set the plane in motion.
+                </p>
+                <h3 data-aos="zoom-in" class="header">Forces</h3>
+                <p data-aos="zoom-in" class="writing">
+                    After an initial force sets it in motion, the paper plane is subjected to a variety of forces from the surrounding air, until it eventually hits the ground. Because flight dynamics are so complex, the forces and moments acting on the plane are very dependent on a variety of factors including plane geometry, material constants, trajectory, and environmental factors. All of these can be roughly accounted for by adding accompanying constants to the force equations. 
+                </p>
+                <!--<p  class="writing">
+                    <math data-aos="zoom-in" xmlns="http://www.w3.org/1998/Math/MathML" mode="display">
+                        <mrow>
+                            <mn> X </mn>
+                            <mo> = </mo>
+                            <msub>
+                                <mi> C </mi>
+                                <mn> X </mn>
+                            </msub>
+                                <mn> q </mn>
+                                <mn> S </mn>
+                        </mrow>
+                    </math> 
+                    <math data-aos="zoom-in" xmlns="http://www.w3.org/1998/Math/MathML" mode="display">
+                        <mrow>
+                            <mn> Y </mn>
+                            <mo> = </mo>
+                            <msub>
+                                <mi> C </mi>
+                                <mn> Y </mn>
+                            </msub>
+                            <mn> q </mn>
+                            <mn> S </mn>
+                        </mrow>
+                    </math> 
+                    <math data-aos="zoom-in" xmlns="http://www.w3.org/1998/Math/MathML" mode="display">   
+                        <mrow>
+                            <mn> Z </mn>
+                            <mo> = </mo>
+                            <msub>
+                                <mi> C </mi>
+                                <mn> Z </mn>
+                            </msub>
+                            <mn> q </mn>
+                            <mn> S </mn>
+                        </mrow>
+                    </math>
+                    <math data-aos="zoom-in" xmlns="http://www.w3.org/1998/Math/MathML" mode="display">  
+                        <mrow>
+                            <mn> L </mn>
+                            <mo> = </mo>
+                            <msub>
+                                <mi> C </mi>
+                                <mn> l </mn>
+                            </msub>
+                            <mn> q </mn>
+                            <mn> S </mn>
+                            <mn> b </mn>
+                        </mrow>
+                    </math>
+                    <math data-aos="zoom-in" xmlns="http://www.w3.org/1998/Math/MathML" mode="display">
+                        <mrow>
+                            <mn> M </mn>
+                            <mo> = </mo>
+                            <msub>
+                                <mi> C </mi>
+                                <mn> m </mn>
+                            </msub>
+                            <mn> q </mn>
+                            <mn> S </mn>
+                            <mn> c </mn>
+                        </mrow>
+                    </math>
+                    <math data-aos="zoom-in" xmlns="http://www.w3.org/1998/Math/MathML" mode="display">    
+                        <mrow>
+                            <mn> N </mn>
+                            <mo> = </mo>
+                            <msub>
+                                <mi> C </mi>
+                                <mn> n </mn>
+                            </msub>
+                            <mn> q </mn>
+                            <mn> S </mn>
+                            <mn> b </mn>
+                        </mrow>
+                    </math>
+                </p>-->
+                <h3 data-aos="zoom-in" class="header">Dynamics</h3>
+                <p data-aos="zoom-in" class="writing">
+                    The dynamics of an object in motion have to do with the relative change in its position over a period of time. This almost always involves solving a series of differential equations to learn more about how it moves in time. In our case, we can consider the energy involved in the planes motion, in combination with its geometry and the forces acting on it to develop a set of equations (one for each degree of freedom, and a few more for good luck). With a couple of simplifying assumptions, and a bit of code, these equations are easily solved by a computer.
+                </p>
+                <!--<p class="writing">
+                    <math data-aos="zoom-in" xmlns="http://www.w3.org/1998/Math/MathML" mode="display">
+                        <mrow>
+                            <mfrac>
+                                <mn> dp </mn>
+                                <mo> dt </mo>
+                            </mfrac>
+                            <mo> = </mo>
+                            <msub>
+                                <mi> C </mi>
+                                <mn> Y </mn>
+                            </msub>
+                            <mn> q </mn>
+                            <mn> S </mn>
+                        </mrow>
+                    </math> 
+                </p>-->
+                <h3 data-aos="zoom-in" class="header">Assumptions</h3>
+                <p data-aos="zoom-in" class="writing">
+                   In order to avoid a month-long headache, and hours of unpaid screaming at our desktop monitors, a few simplifying assumptions had to be made. Things like removing the compressibility of air, and using perfectly symmetrical geometry helped to ease the recurring nightmares. Our final assumption, was that on the five meter patch of grass the airplane could fly over, the Earth was flat; and for as much as we have held our rulers up to the horizon, we can't seem to prove this one wrong (sorry Galileo).
+                </p>
+            </div>
+            <div class="footer" id="footer">
+                <nav class="mainLink">
+                    <a class="link" href="./index.html">Main Page</a>
+                </nav>
+                <nav class="developers">
+                    <a class="link" href="./developers.html">Meet The Developers</a>
+                </nav>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+    AOS.init({
+        duration: 1200,
+    })
+</script>
