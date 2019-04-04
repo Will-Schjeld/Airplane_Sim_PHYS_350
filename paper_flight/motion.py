@@ -41,3 +41,14 @@ def fly(xdot, tspan, x0, wind):
     t = np.linspace(t0,tf,iter+1)
 
     return [x,t]
+
+[x,t] = fly(xdot, [0,50], np.array([10,0,0,0,0,0,0,0,0,0,-np.pi/5,0]), np.array([0,-4,0]))
+fig = plt.figure()
+ax = plt.axes(projection = '3d')
+ax.plot3D(x[0:len(t),3],x[0:len(t),4],x[0:len(t),5])
+ax.set_zlim(-1.2,2)
+ax.set_ylim(0,2)
+ax.set_xlim(0,10)
+fig2 = plt.figure()
+plt.plot(t,-x[0:len(t),10])
+plt.show()
